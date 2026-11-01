@@ -1,0 +1,24 @@
+{
+  "challenge_id": "df986b7c099a06db",
+  "service": "benchmark-service",
+  "D_id": "12345",
+  "scheme_id": "42",
+  "root_version": 1,
+  "root": "9046879989600608694666409669853376020923349142629711329275735982465483555999",
+  "proof_system": "Groth16",
+  "curve": "bn128",
+  "signed_root_valid": true,
+  "latest_root_policy": true,
+  "public_statement_match": true,
+  "proof_auth_ZK_valid": true,
+  "challenge_consumed": true,
+  "AuthResult": "ACCEPT",
+  "accepted_at": "2026-10-25T21:04:15.135Z",
+  "timings_ms": {
+    "challenge_time_check_ms": 0.017,
+    "challenge_binding_ms": 0.0326,
+    "signed_root_verify_ms": 116.7198,
+    "groth16_verify_ms": 240.0603,
+    "total_verification_ms": 362.6758
+  }
+}
