@@ -1,0 +1,373 @@
+{
+  "benchmark": "Groth16 link crypto-core (in-memory)",
+  "created_at": "2026-10-26T22:12:38.008Z",
+  "warmup_runs": 5,
+  "measured_runs": 50,
+  "environment": {
+    "platform": "win32",
+    "arch": "x64",
+    "node": "v26.1.0",
+    "cpu_model": "12th Gen Intel(R) Core(TM) i7-12650H",
+    "cpu_logical_cores": 16,
+    "memory_total_bytes": 16782184448
+  },
+  "metadata": {
+    "circuit": "link",
+    "proof_system": "Groth16",
+    "curve": "bn128",
+    "input_file": "D:\\thesis-simulation\\build\\link_proof_inputs\\06a83bd85b983218.json",
+    "wasm_file": "D:\\thesis-simulation\\build\\link_proof\\link-proof_js\\link-proof.wasm",
+    "zkey_file": "D:\\thesis-simulation\\build\\link_proof\\link-proof_final.zkey",
+    "verification_key_file": "D:\\thesis-simulation\\build\\link_proof\\verification_key.json",
+    "file_io_inside_samples": false,
+    "process_startup_inside_samples": false,
+    "witness_calculator_setup_inside_samples": false,
+    "zkey_transport": "preloaded Uint8Array / in-memory fastfile",
+    "witness_transport": "in-memory WTNS Uint8Array",
+    "note": "witness_generation_core_ms measures calculateWTNSBin on a pre-built WitnessCalculator. groth16_prove_from_witness_ms measures snarkjs.groth16.prove with preloaded in-memory ZKey and in-memory witness. groth16_verify_core_ms measures snarkjs.groth16.verify with VKey/proof/publicSignals already resident in memory. These are library-level crypto-core timings: OS process startup and disk I/O are excluded, but normal snarkjs internal parsing/setup performed by prove/verify remains part of those library calls."
+  },
+  "summary": {
+    "witness_generation_core_ms": {
+      "n": 50,
+      "mean_ms": 35.60044799999988,
+      "median_ms": 27.241000000001804,
+      "stddev_ms": 11.982823017838165,
+      "min_ms": 25.650900000000547,
+      "max_ms": 58.24469999999974,
+      "p95_ms": 54.13380000000325,
+      "cv_percent": 33.65919164230238
+    },
+    "groth16_prove_from_witness_ms": {
+      "n": 50,
+      "mean_ms": 705.76791,
+      "median_ms": 404.8382500000007,
+      "stddev_ms": 414.837973701625,
+      "min_ms": 370.2939000000042,
+      "max_ms": 1310.8152,
+      "p95_ms": 1305.3500000000004,
+      "cv_percent": 58.77824251057617
+    },
+    "groth16_verify_core_ms": {
+      "n": 50,
+      "mean_ms": 20.614562000000006,
+      "median_ms": 12.648849999999584,
+      "stddev_ms": 12.04340315665916,
+      "min_ms": 9.866899999997258,
+      "max_ms": 46.41139999999996,
+      "p95_ms": 41.55630000000019,
+      "cv_percent": 58.42182412926918
+    },
+    "groth16_crypto_core_total_ms": {
+      "n": 50,
+      "mean_ms": 761.9829199999999,
+      "median_ms": 444.3905999999988,
+      "stddev_ms": 438.0401731647859,
+      "min_ms": 406.9736000000048,
+      "max_ms": 1394.9062999999996,
+      "p95_ms": 1385.3346000000001,
+      "cv_percent": 57.48687558046392
+    }
+  },
+  "samples": [
+    {
+      "witness_generation_core_ms": 58.24469999999974,
+      "groth16_prove_from_witness_ms": 1233.6481999999996,
+      "groth16_verify_core_ms": 31.141700000000128,
+      "groth16_crypto_core_total_ms": 1323.0345999999995
+    },
+    {
+      "witness_generation_core_ms": 49.54100000000017,
+      "groth16_prove_from_witness_ms": 1310.8152,
+      "groth16_verify_core_ms": 34.550099999999475,
+      "groth16_crypto_core_total_ms": 1394.9062999999996
+    },
+    {
+      "witness_generation_core_ms": 53.80529999999999,
+      "groth16_prove_from_witness_ms": 1265.6108999999997,
+      "groth16_verify_core_ms": 46.41139999999996,
+      "groth16_crypto_core_total_ms": 1365.8275999999996
+    },
+    {
+      "witness_generation_core_ms": 47.67569999999978,
+      "groth16_prove_from_witness_ms": 1305.3500000000004,
+      "groth16_verify_core_ms": 32.308899999999994,
+      "groth16_crypto_core_total_ms": 1385.3346000000001
+    },
+    {
+      "witness_generation_core_ms": 48.23309999999947,
+      "groth16_prove_from_witness_ms": 1223.2942999999996,
+      "groth16_verify_core_ms": 28.900499999999738,
+      "groth16_crypto_core_total_ms": 1300.4278999999988
+    },
+    {
+      "witness_generation_core_ms": 49.680599999999686,
+      "groth16_prove_from_witness_ms": 1308.9634000000005,
+      "groth16_verify_core_ms": 33.271199999999226,
+      "groth16_crypto_core_total_ms": 1391.9151999999995
+    },
+    {
+      "witness_generation_core_ms": 54.621900000000096,
+      "groth16_prove_from_witness_ms": 1280.6308000000008,
+      "groth16_verify_core_ms": 33.148699999999735,
+      "groth16_crypto_core_total_ms": 1368.4014000000006
+    },
+    {
+      "witness_generation_core_ms": 53.95349999999962,
+      "groth16_prove_from_witness_ms": 1225.1373999999996,
+      "groth16_verify_core_ms": 36.8153999999995,
+      "groth16_crypto_core_total_ms": 1315.9062999999987
+    },
+    {
+      "witness_generation_core_ms": 48.100399999999354,
+      "groth16_prove_from_witness_ms": 1255.1203000000005,
+      "groth16_verify_core_ms": 36.33759999999893,
+      "groth16_crypto_core_total_ms": 1339.5582999999988
+    },
+    {
+      "witness_generation_core_ms": 50.17870000000039,
+      "groth16_prove_from_witness_ms": 1225.4560999999994,
+      "groth16_verify_core_ms": 31.059400000001915,
+      "groth16_crypto_core_total_ms": 1306.6942000000017
+    },
+    {
+      "witness_generation_core_ms": 49.369200000001,
+      "groth16_prove_from_witness_ms": 1232.4187999999995,
+      "groth16_verify_core_ms": 37.00710000000254,
+      "groth16_crypto_core_total_ms": 1318.795100000003
+    },
+    {
+      "witness_generation_core_ms": 47.68529999999737,
+      "groth16_prove_from_witness_ms": 1206.1985000000022,
+      "groth16_verify_core_ms": 36.21249999999782,
+      "groth16_crypto_core_total_ms": 1290.0962999999974
+    },
+    {
+      "witness_generation_core_ms": 50.18379999999888,
+      "groth16_prove_from_witness_ms": 1251.8810000000012,
+      "groth16_verify_core_ms": 36.04149999999936,
+      "groth16_crypto_core_total_ms": 1338.1062999999995
+    },
+    {
+      "witness_generation_core_ms": 47.30059999999867,
+      "groth16_prove_from_witness_ms": 1231.0267000000022,
+      "groth16_verify_core_ms": 41.55630000000019,
+      "groth16_crypto_core_total_ms": 1319.883600000001
+    },
+    {
+      "witness_generation_core_ms": 49.72070000000167,
+      "groth16_prove_from_witness_ms": 1204.9992999999995,
+      "groth16_verify_core_ms": 45.11119999999937,
+      "groth16_crypto_core_total_ms": 1299.8312000000005
+    },
+    {
+      "witness_generation_core_ms": 48.6275999999998,
+      "groth16_prove_from_witness_ms": 1278.979800000001,
+      "groth16_verify_core_ms": 32.534599999999045,
+      "groth16_crypto_core_total_ms": 1360.1419999999998
+    },
+    {
+      "witness_generation_core_ms": 54.13380000000325,
+      "groth16_prove_from_witness_ms": 1230.4412999999986,
+      "groth16_verify_core_ms": 35.48500000000058,
+      "groth16_crypto_core_total_ms": 1320.0601000000024
+    },
+    {
+      "witness_generation_core_ms": 49.860499999998865,
+      "groth16_prove_from_witness_ms": 1219.018500000002,
+      "groth16_verify_core_ms": 40.924199999997654,
+      "groth16_crypto_core_total_ms": 1309.8031999999985
+    },
+    {
+      "witness_generation_core_ms": 49.21649999999863,
+      "groth16_prove_from_witness_ms": 701.6684000000023,
+      "groth16_verify_core_ms": 11.77429999999731,
+      "groth16_crypto_core_total_ms": 762.6591999999982
+    },
+    {
+      "witness_generation_core_ms": 26.023700000001554,
+      "groth16_prove_from_witness_ms": 380.1375999999982,
+      "groth16_verify_core_ms": 11.861700000001292,
+      "groth16_crypto_core_total_ms": 418.02300000000105
+    },
+    {
+      "witness_generation_core_ms": 26.075300000000425,
+      "groth16_prove_from_witness_ms": 378.6205000000009,
+      "groth16_verify_core_ms": 12.6320999999989,
+      "groth16_crypto_core_total_ms": 417.3279000000002
+    },
+    {
+      "witness_generation_core_ms": 26.16359999999986,
+      "groth16_prove_from_witness_ms": 375.0803999999989,
+      "groth16_verify_core_ms": 12.826600000000326,
+      "groth16_crypto_core_total_ms": 414.0705999999991
+    },
+    {
+      "witness_generation_core_ms": 25.92450000000099,
+      "groth16_prove_from_witness_ms": 404.8042999999998,
+      "groth16_verify_core_ms": 12.78269999999975,
+      "groth16_crypto_core_total_ms": 443.5115000000005
+    },
+    {
+      "witness_generation_core_ms": 25.757699999998295,
+      "groth16_prove_from_witness_ms": 386.7849000000024,
+      "groth16_verify_core_ms": 13.697000000000116,
+      "groth16_crypto_core_total_ms": 426.2396000000008
+    },
+    {
+      "witness_generation_core_ms": 25.738899999996647,
+      "groth16_prove_from_witness_ms": 410.2410000000018,
+      "groth16_verify_core_ms": 11.704900000000634,
+      "groth16_crypto_core_total_ms": 447.6847999999991
+    },
+    {
+      "witness_generation_core_ms": 29.258499999999913,
+      "groth16_prove_from_witness_ms": 384.9483999999975,
+      "groth16_verify_core_ms": 12.624300000003132,
+      "groth16_crypto_core_total_ms": 426.83120000000054
+    },
+    {
+      "witness_generation_core_ms": 26.070999999999913,
+      "groth16_prove_from_witness_ms": 394.78429999999935,
+      "groth16_verify_core_ms": 9.866899999997258,
+      "groth16_crypto_core_total_ms": 430.7221999999965
+    },
+    {
+      "witness_generation_core_ms": 26.71980000000258,
+      "groth16_prove_from_witness_ms": 385.29849999999715,
+      "groth16_verify_core_ms": 11.771500000002561,
+      "groth16_crypto_core_total_ms": 423.7898000000023
+    },
+    {
+      "witness_generation_core_ms": 26.04240000000209,
+      "groth16_prove_from_witness_ms": 380.0242999999973,
+      "groth16_verify_core_ms": 12.665600000000268,
+      "groth16_crypto_core_total_ms": 418.73229999999967
+    },
+    {
+      "witness_generation_core_ms": 27.815400000003137,
+      "groth16_prove_from_witness_ms": 404.8722000000016,
+      "groth16_verify_core_ms": 13.418799999999464,
+      "groth16_crypto_core_total_ms": 446.1064000000042
+    },
+    {
+      "witness_generation_core_ms": 27.625099999997474,
+      "groth16_prove_from_witness_ms": 417.7001999999993,
+      "groth16_verify_core_ms": 13.145300000003772,
+      "groth16_crypto_core_total_ms": 458.47060000000056
+    },
+    {
+      "witness_generation_core_ms": 28.209100000000035,
+      "groth16_prove_from_witness_ms": 389.85459999999875,
+      "groth16_verify_core_ms": 11.668299999997544,
+      "groth16_crypto_core_total_ms": 429.73199999999633
+    },
+    {
+      "witness_generation_core_ms": 25.791799999999057,
+      "groth16_prove_from_witness_ms": 408.1247999999978,
+      "groth16_verify_core_ms": 11.353100000000268,
+      "groth16_crypto_core_total_ms": 445.2696999999971
+    },
+    {
+      "witness_generation_core_ms": 25.79660000000149,
+      "groth16_prove_from_witness_ms": 390.3678,
+      "groth16_verify_core_ms": 11.388500000000931,
+      "groth16_crypto_core_total_ms": 427.5529000000024
+    },
+    {
+      "witness_generation_core_ms": 25.716199999995297,
+      "groth16_prove_from_witness_ms": 384.51540000000386,
+      "groth16_verify_core_ms": 11.795699999995122,
+      "groth16_crypto_core_total_ms": 422.0272999999943
+    },
+    {
+      "witness_generation_core_ms": 27.366399999998976,
+      "groth16_prove_from_witness_ms": 384.1840000000011,
+      "groth16_verify_core_ms": 12.040699999997742,
+      "groth16_crypto_core_total_ms": 423.5910999999978
+    },
+    {
+      "witness_generation_core_ms": 27.115600000004633,
+      "groth16_prove_from_witness_ms": 376.61189999999624,
+      "groth16_verify_core_ms": 11.614500000003318,
+      "groth16_crypto_core_total_ms": 415.3420000000042
+    },
+    {
+      "witness_generation_core_ms": 25.678500000001804,
+      "groth16_prove_from_witness_ms": 370.2939000000042,
+      "groth16_verify_core_ms": 11.00119999999879,
+      "groth16_crypto_core_total_ms": 406.9736000000048
+    },
+    {
+      "witness_generation_core_ms": 25.709100000000035,
+      "groth16_prove_from_witness_ms": 422.3188000000009,
+      "groth16_verify_core_ms": 11.553500000001804,
+      "groth16_crypto_core_total_ms": 459.58140000000276
+    },
+    {
+      "witness_generation_core_ms": 25.98649999999907,
+      "groth16_prove_from_witness_ms": 381.94089999999414,
+      "groth16_verify_core_ms": 11.321500000005472,
+      "groth16_crypto_core_total_ms": 419.2488999999987
+    },
+    {
+      "witness_generation_core_ms": 25.84780000000319,
+      "groth16_prove_from_witness_ms": 387.5732999999964,
+      "groth16_verify_core_ms": 12.149300000004587,
+      "groth16_crypto_core_total_ms": 425.57040000000416
+    },
+    {
+      "witness_generation_core_ms": 25.910299999995914,
+      "groth16_prove_from_witness_ms": 389.2827000000034,
+      "groth16_verify_core_ms": 12.43119999999908,
+      "groth16_crypto_core_total_ms": 427.6241999999984
+    },
+    {
+      "witness_generation_core_ms": 25.65780000000086,
+      "groth16_prove_from_witness_ms": 395.3248999999996,
+      "groth16_verify_core_ms": 11.274699999994482,
+      "groth16_crypto_core_total_ms": 432.25739999999496
+    },
+    {
+      "witness_generation_core_ms": 25.708099999996193,
+      "groth16_prove_from_witness_ms": 392.51090000000113,
+      "groth16_verify_core_ms": 11.635300000001735,
+      "groth16_crypto_core_total_ms": 429.85429999999906
+    },
+    {
+      "witness_generation_core_ms": 30.80659999999625,
+      "groth16_prove_from_witness_ms": 381.0679000000018,
+      "groth16_verify_core_ms": 11.290399999998044,
+      "groth16_crypto_core_total_ms": 423.1648999999961
+    },
+    {
+      "witness_generation_core_ms": 25.958599999998114,
+      "groth16_prove_from_witness_ms": 427.57340000000113,
+      "groth16_verify_core_ms": 10.987799999995332,
+      "groth16_crypto_core_total_ms": 464.5197999999946
+    },
+    {
+      "witness_generation_core_ms": 25.650900000000547,
+      "groth16_prove_from_witness_ms": 378.9695999999967,
+      "groth16_verify_core_ms": 11.3153999999995,
+      "groth16_crypto_core_total_ms": 415.93589999999676
+    },
+    {
+      "witness_generation_core_ms": 26.17790000000241,
+      "groth16_prove_from_witness_ms": 374.3307999999961,
+      "groth16_verify_core_ms": 11.571600000002945,
+      "groth16_crypto_core_total_ms": 412.08030000000144
+    },
+    {
+      "witness_generation_core_ms": 25.87290000000212,
+      "groth16_prove_from_witness_ms": 383.87460000000283,
+      "groth16_verify_core_ms": 12.875200000002224,
+      "groth16_crypto_core_total_ms": 422.62270000000717
+    },
+    {
+      "witness_generation_core_ms": 25.712899999998626,
+      "groth16_prove_from_witness_ms": 375.71979999999894,
+      "groth16_verify_core_ms": 11.871200000001409,
+      "groth16_crypto_core_total_ms": 413.303899999999
+    }
+  ]
+}

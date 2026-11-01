@@ -1,0 +1,309 @@
+{
+  "benchmark": "Groth16 auth proof",
+  "created_at": "2026-10-26T20:57:08.837Z",
+  "warmup_runs": 5,
+  "measured_runs": 50,
+  "environment": {
+    "platform": "win32",
+    "arch": "x64",
+    "node": "v26.1.0",
+    "cpu_model": "12th Gen Intel(R) Core(TM) i7-12650H",
+    "cpu_logical_cores": 16,
+    "memory_total_bytes": 16782184448
+  },
+  "metadata": {
+    "circuit": "auth",
+    "proof_system": "Groth16",
+    "curve": "bn128",
+    "input_file": "D:\\thesis-simulation\\build\\auth_proof_inputs\\37ed620e7ddf7a69.json",
+    "wasm_file": "D:\\thesis-simulation\\build\\auth_proof\\auth-proof_js\\auth-proof.wasm",
+    "zkey_file": "D:\\thesis-simulation\\build\\auth_proof\\auth-proof_final.zkey",
+    "verification_key_file": "D:\\thesis-simulation\\build\\auth_proof\\verification_key.json",
+    "one_time_correctness_check": true,
+    "note": "proof_generation_ms measures snarkjs groth16.fullProve; verification key is preloaded outside measured samples."
+  },
+  "summary": {
+    "proof_generation_ms": {
+      "n": 50,
+      "mean_ms": 916.2931779999998,
+      "median_ms": 911.7178499999991,
+      "stddev_ms": 19.459816894520987,
+      "min_ms": 883.5207999999984,
+      "max_ms": 971.7057999999997,
+      "p95_ms": 956.6035999999986,
+      "cv_percent": 2.1237544229016394
+    },
+    "proof_verification_ms": {
+      "n": 50,
+      "mean_ms": 13.583118000000322,
+      "median_ms": 12.23070000000007,
+      "stddev_ms": 4.040901508766001,
+      "min_ms": 9.98120000000199,
+      "max_ms": 26.94970000000467,
+      "p95_ms": 24.951500000002852,
+      "cv_percent": 29.749439773444543
+    },
+    "zk_total_ms": {
+      "n": 50,
+      "mean_ms": 929.876296,
+      "median_ms": 927.5453999999991,
+      "stddev_ms": 19.250146395583208,
+      "min_ms": 895.5807999999997,
+      "max_ms": 984.1648999999998,
+      "p95_ms": 968.5865999999987,
+      "cv_percent": 2.0701835801590547
+    }
+  },
+  "samples": [
+    {
+      "proof_generation_ms": 930.4632000000001,
+      "proof_verification_ms": 12.561399999998685,
+      "zk_total_ms": 943.0245999999988
+    },
+    {
+      "proof_generation_ms": 971.7057999999997,
+      "proof_verification_ms": 12.459100000000035,
+      "zk_total_ms": 984.1648999999998
+    },
+    {
+      "proof_generation_ms": 961.6540000000005,
+      "proof_verification_ms": 10.813500000000204,
+      "zk_total_ms": 972.4675000000007
+    },
+    {
+      "proof_generation_ms": 923.9429999999993,
+      "proof_verification_ms": 12.341699999999037,
+      "zk_total_ms": 936.2846999999983
+    },
+    {
+      "proof_generation_ms": 928.7222000000002,
+      "proof_verification_ms": 12.890600000000632,
+      "zk_total_ms": 941.6128000000008
+    },
+    {
+      "proof_generation_ms": 918.8251999999993,
+      "proof_verification_ms": 12.668999999999869,
+      "zk_total_ms": 931.4941999999992
+    },
+    {
+      "proof_generation_ms": 892.5124000000014,
+      "proof_verification_ms": 11.981399999998757,
+      "zk_total_ms": 904.4938000000002
+    },
+    {
+      "proof_generation_ms": 899.9712,
+      "proof_verification_ms": 24.6208000000006,
+      "zk_total_ms": 924.5920000000006
+    },
+    {
+      "proof_generation_ms": 911.3944999999985,
+      "proof_verification_ms": 21.87970000000132,
+      "zk_total_ms": 933.2741999999998
+    },
+    {
+      "proof_generation_ms": 936.2380000000012,
+      "proof_verification_ms": 12.257699999998295,
+      "zk_total_ms": 948.4956999999995
+    },
+    {
+      "proof_generation_ms": 911.3616000000002,
+      "proof_verification_ms": 13.229699999999866,
+      "zk_total_ms": 924.5913
+    },
+    {
+      "proof_generation_ms": 883.5207999999984,
+      "proof_verification_ms": 12.06000000000131,
+      "zk_total_ms": 895.5807999999997
+    },
+    {
+      "proof_generation_ms": 932.9411,
+      "proof_verification_ms": 11.97269999999844,
+      "zk_total_ms": 944.9137999999984
+    },
+    {
+      "proof_generation_ms": 907.0367000000006,
+      "proof_verification_ms": 20.916199999999662,
+      "zk_total_ms": 927.9529000000002
+    },
+    {
+      "proof_generation_ms": 929.6696999999986,
+      "proof_verification_ms": 11.693899999998393,
+      "zk_total_ms": 941.363599999997
+    },
+    {
+      "proof_generation_ms": 956.6035999999986,
+      "proof_verification_ms": 11.983000000000175,
+      "zk_total_ms": 968.5865999999987
+    },
+    {
+      "proof_generation_ms": 908.683299999997,
+      "proof_verification_ms": 12.071400000000722,
+      "zk_total_ms": 920.7546999999977
+    },
+    {
+      "proof_generation_ms": 919.8269,
+      "proof_verification_ms": 9.98120000000199,
+      "zk_total_ms": 929.808100000002
+    },
+    {
+      "proof_generation_ms": 937.2570000000014,
+      "proof_verification_ms": 13.036599999999453,
+      "zk_total_ms": 950.2936000000009
+    },
+    {
+      "proof_generation_ms": 910.3172000000013,
+      "proof_verification_ms": 12.56000000000131,
+      "zk_total_ms": 922.8772000000026
+    },
+    {
+      "proof_generation_ms": 909.9732000000004,
+      "proof_verification_ms": 11.831099999999424,
+      "zk_total_ms": 921.8042999999998
+    },
+    {
+      "proof_generation_ms": 900.7010999999984,
+      "proof_verification_ms": 11.830800000003364,
+      "zk_total_ms": 912.5319000000018
+    },
+    {
+      "proof_generation_ms": 902.2252000000008,
+      "proof_verification_ms": 11.719499999999243,
+      "zk_total_ms": 913.9447
+    },
+    {
+      "proof_generation_ms": 894.7805999999982,
+      "proof_verification_ms": 12.203700000001845,
+      "zk_total_ms": 906.9843000000001
+    },
+    {
+      "proof_generation_ms": 915.5440999999992,
+      "proof_verification_ms": 12.27889999999752,
+      "zk_total_ms": 927.8229999999967
+    },
+    {
+      "proof_generation_ms": 890.0789000000004,
+      "proof_verification_ms": 12.00590000000011,
+      "zk_total_ms": 902.0848000000005
+    },
+    {
+      "proof_generation_ms": 895.9956999999958,
+      "proof_verification_ms": 11.989700000005541,
+      "zk_total_ms": 907.9854000000014
+    },
+    {
+      "proof_generation_ms": 905.1984999999986,
+      "proof_verification_ms": 11.78360000000248,
+      "zk_total_ms": 916.9821000000011
+    },
+    {
+      "proof_generation_ms": 909.5627999999997,
+      "proof_verification_ms": 12.148100000005797,
+      "zk_total_ms": 921.7109000000055
+    },
+    {
+      "proof_generation_ms": 922.7252999999982,
+      "proof_verification_ms": 24.951500000002852,
+      "zk_total_ms": 947.6768000000011
+    },
+    {
+      "proof_generation_ms": 910.1995000000024,
+      "proof_verification_ms": 11.527599999993981,
+      "zk_total_ms": 921.7270999999964
+    },
+    {
+      "proof_generation_ms": 897.1851000000024,
+      "proof_verification_ms": 11.868799999996554,
+      "zk_total_ms": 909.053899999999
+    },
+    {
+      "proof_generation_ms": 900.8902999999991,
+      "proof_verification_ms": 12.827100000002247,
+      "zk_total_ms": 913.7174000000014
+    },
+    {
+      "proof_generation_ms": 902.0619999999981,
+      "proof_verification_ms": 12.83060000000114,
+      "zk_total_ms": 914.8925999999992
+    },
+    {
+      "proof_generation_ms": 944.3447999999989,
+      "proof_verification_ms": 12.794099999999162,
+      "zk_total_ms": 957.1388999999981
+    },
+    {
+      "proof_generation_ms": 913.6862000000037,
+      "proof_verification_ms": 12.331500000000233,
+      "zk_total_ms": 926.017700000004
+    },
+    {
+      "proof_generation_ms": 936.2928000000029,
+      "proof_verification_ms": 12.622299999995448,
+      "zk_total_ms": 948.9150999999983
+    },
+    {
+      "proof_generation_ms": 942.8477999999959,
+      "proof_verification_ms": 12.798099999999977,
+      "zk_total_ms": 955.6458999999959
+    },
+    {
+      "proof_generation_ms": 924.6425999999992,
+      "proof_verification_ms": 12.42160000000149,
+      "zk_total_ms": 937.0642000000007
+    },
+    {
+      "proof_generation_ms": 919.0576999999976,
+      "proof_verification_ms": 12.02679999999964,
+      "zk_total_ms": 931.0844999999972
+    },
+    {
+      "proof_generation_ms": 912.0411999999997,
+      "proof_verification_ms": 12.267100000004575,
+      "zk_total_ms": 924.3083000000042
+    },
+    {
+      "proof_generation_ms": 896.290399999998,
+      "proof_verification_ms": 11.878300000003946,
+      "zk_total_ms": 908.168700000002
+    },
+    {
+      "proof_generation_ms": 889.4512000000032,
+      "proof_verification_ms": 11.616000000001804,
+      "zk_total_ms": 901.067200000005
+    },
+    {
+      "proof_generation_ms": 946.4709000000003,
+      "proof_verification_ms": 12.270699999993667,
+      "zk_total_ms": 958.7415999999939
+    },
+    {
+      "proof_generation_ms": 924.5408000000025,
+      "proof_verification_ms": 12.059900000000198,
+      "zk_total_ms": 936.6007000000027
+    },
+    {
+      "proof_generation_ms": 906.0335999999952,
+      "proof_verification_ms": 26.94970000000467,
+      "zk_total_ms": 932.9832999999999
+    },
+    {
+      "proof_generation_ms": 915.2704000000012,
+      "proof_verification_ms": 11.997400000000198,
+      "zk_total_ms": 927.2678000000014
+    },
+    {
+      "proof_generation_ms": 917.2733000000007,
+      "proof_verification_ms": 11.696500000005472,
+      "zk_total_ms": 928.9698000000062
+    },
+    {
+      "proof_generation_ms": 898.9612999999954,
+      "proof_verification_ms": 12.119200000001001,
+      "zk_total_ms": 911.0804999999964
+    },
+    {
+      "proof_generation_ms": 897.6842000000033,
+      "proof_verification_ms": 25.530199999993783,
+      "zk_total_ms": 923.2143999999971
+    }
+  ]
+}

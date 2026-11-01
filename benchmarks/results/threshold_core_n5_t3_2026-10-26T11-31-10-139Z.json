@@ -1,0 +1,486 @@
+{
+  "benchmark": "Threshold core n=5, t=3",
+  "created_at": "2026-10-26T11:31:39.540Z",
+  "warmup_runs": 5,
+  "measured_runs": 50,
+  "environment": {
+    "platform": "win32",
+    "arch": "x64",
+    "node": "v26.1.0",
+    "cpu_model": "12th Gen Intel(R) Core(TM) i7-12650H",
+    "cpu_logical_cores": 16,
+    "memory_total_bytes": 16782184448
+  },
+  "metadata": {
+    "n": 5,
+    "t": 3,
+    "babyjub_setup_scope": "one-time, excluded from samples",
+    "reconstruction": "same Lagrange-at-zero arithmetic as revocation/refresh implementation",
+    "refresh": "same zero-constant polynomial, BabyJub commitment, n^2 delta/Feldman verification, share update core as proactive-refresh.js",
+    "verification_count_per_run": 25
+  },
+  "summary": {
+    "lagrange_reconstruction_ms": {
+      "n": 50,
+      "mean_ms": 0.3571959999999999,
+      "median_ms": 0.29975,
+      "stddev_ms": 0.1270587393648292,
+      "min_ms": 0.2655,
+      "max_ms": 0.7188,
+      "p95_ms": 0.6112,
+      "cv_percent": 35.57115403443186
+    },
+    "refresh_polynomial_commitments_ms": {
+      "n": 50,
+      "mean_ms": 151.893806,
+      "median_ms": 135.50185,
+      "stddev_ms": 42.02522328108035,
+      "min_ms": 130.6894,
+      "max_ms": 295.0737,
+      "p95_ms": 246.1792,
+      "cv_percent": 27.667502966566225
+    },
+    "refresh_delta_verify_ms": {
+      "n": 50,
+      "mean_ms": 386.26948399999986,
+      "median_ms": 343.40175,
+      "stddev_ms": 97.8719323859655,
+      "min_ms": 334.6989,
+      "max_ms": 624.3304,
+      "p95_ms": 618.8068,
+      "cv_percent": 25.337733484006087
+    },
+    "refresh_share_update_ms": {
+      "n": 50,
+      "mean_ms": 0.021786000000000007,
+      "median_ms": 0.0172,
+      "stddev_ms": 0.019537447141741077,
+      "min_ms": 0.0125,
+      "max_ms": 0.1517,
+      "p95_ms": 0.0319,
+      "cv_percent": 89.67890912393771
+    },
+    "post_refresh_reconstruction_ms": {
+      "n": 50,
+      "mean_ms": 0.351696,
+      "median_ms": 0.29655,
+      "stddev_ms": 0.13266555150114157,
+      "min_ms": 0.2677,
+      "max_ms": 0.8072,
+      "p95_ms": 0.6501,
+      "cv_percent": 37.721654923894945
+    },
+    "refresh_core_total_ms": {
+      "n": 50,
+      "mean_ms": 538.5367719999999,
+      "median_ms": 481.18615,
+      "stddev_ms": 138.02861235140745,
+      "min_ms": 468.60280000000006,
+      "max_ms": 909.1736,
+      "p95_ms": 865.8765000000001,
+      "cv_percent": 25.630304099532776
+    }
+  },
+  "samples": [
+    {
+      "lagrange_reconstruction_ms": 0.2972,
+      "refresh_polynomial_commitments_ms": 134.6101,
+      "refresh_delta_verify_ms": 342.6085,
+      "refresh_share_update_ms": 0.02,
+      "post_refresh_reconstruction_ms": 0.335,
+      "refresh_core_total_ms": 477.57359999999994
+    },
+    {
+      "lagrange_reconstruction_ms": 0.3582,
+      "refresh_polynomial_commitments_ms": 138.5436,
+      "refresh_delta_verify_ms": 572.6911,
+      "refresh_share_update_ms": 0.0314,
+      "post_refresh_reconstruction_ms": 0.677,
+      "refresh_core_total_ms": 711.9431
+    },
+    {
+      "lagrange_reconstruction_ms": 0.7081,
+      "refresh_polynomial_commitments_ms": 295.0737,
+      "refresh_delta_verify_ms": 613.4891,
+      "refresh_share_update_ms": 0.0266,
+      "post_refresh_reconstruction_ms": 0.5842,
+      "refresh_core_total_ms": 909.1736
+    },
+    {
+      "lagrange_reconstruction_ms": 0.5799,
+      "refresh_polynomial_commitments_ms": 242.6216,
+      "refresh_delta_verify_ms": 618.8068,
+      "refresh_share_update_ms": 0.0279,
+      "post_refresh_reconstruction_ms": 0.5874,
+      "refresh_core_total_ms": 862.0437000000001
+    },
+    {
+      "lagrange_reconstruction_ms": 0.5845,
+      "refresh_polynomial_commitments_ms": 258.875,
+      "refresh_delta_verify_ms": 621.9454,
+      "refresh_share_update_ms": 0.0272,
+      "post_refresh_reconstruction_ms": 0.8072,
+      "refresh_core_total_ms": 881.6547999999999
+    },
+    {
+      "lagrange_reconstruction_ms": 0.5773,
+      "refresh_polynomial_commitments_ms": 245.8717,
+      "refresh_delta_verify_ms": 616.4261,
+      "refresh_share_update_ms": 0.029,
+      "post_refresh_reconstruction_ms": 0.6149,
+      "refresh_core_total_ms": 862.9417000000001
+    },
+    {
+      "lagrange_reconstruction_ms": 0.7188,
+      "refresh_polynomial_commitments_ms": 244.5483,
+      "refresh_delta_verify_ms": 598.8756,
+      "refresh_share_update_ms": 0.0289,
+      "post_refresh_reconstruction_ms": 0.5956,
+      "refresh_core_total_ms": 844.0484
+    },
+    {
+      "lagrange_reconstruction_ms": 0.6085,
+      "refresh_polynomial_commitments_ms": 246.1792,
+      "refresh_delta_verify_ms": 591.8433,
+      "refresh_share_update_ms": 0.0319,
+      "post_refresh_reconstruction_ms": 0.6501,
+      "refresh_core_total_ms": 838.7044999999999
+    },
+    {
+      "lagrange_reconstruction_ms": 0.6112,
+      "refresh_polynomial_commitments_ms": 240.9863,
+      "refresh_delta_verify_ms": 624.3304,
+      "refresh_share_update_ms": 0.0272,
+      "post_refresh_reconstruction_ms": 0.5326,
+      "refresh_core_total_ms": 865.8765000000001
+    },
+    {
+      "lagrange_reconstruction_ms": 0.3307,
+      "refresh_polynomial_commitments_ms": 138.2944,
+      "refresh_delta_verify_ms": 350.7084,
+      "refresh_share_update_ms": 0.0363,
+      "post_refresh_reconstruction_ms": 0.3499,
+      "refresh_core_total_ms": 489.38899999999995
+    },
+    {
+      "lagrange_reconstruction_ms": 0.2958,
+      "refresh_polynomial_commitments_ms": 135.9205,
+      "refresh_delta_verify_ms": 339.5324,
+      "refresh_share_update_ms": 0.0189,
+      "post_refresh_reconstruction_ms": 0.3,
+      "refresh_core_total_ms": 475.7718
+    },
+    {
+      "lagrange_reconstruction_ms": 0.299,
+      "refresh_polynomial_commitments_ms": 133.8717,
+      "refresh_delta_verify_ms": 356.9457,
+      "refresh_share_update_ms": 0.0237,
+      "post_refresh_reconstruction_ms": 0.4911,
+      "refresh_core_total_ms": 491.33220000000006
+    },
+    {
+      "lagrange_reconstruction_ms": 0.4307,
+      "refresh_polynomial_commitments_ms": 142.4472,
+      "refresh_delta_verify_ms": 349.0236,
+      "refresh_share_update_ms": 0.0182,
+      "post_refresh_reconstruction_ms": 0.3054,
+      "refresh_core_total_ms": 491.7944
+    },
+    {
+      "lagrange_reconstruction_ms": 0.4501,
+      "refresh_polynomial_commitments_ms": 134.4404,
+      "refresh_delta_verify_ms": 337.7842,
+      "refresh_share_update_ms": 0.0163,
+      "post_refresh_reconstruction_ms": 0.3001,
+      "refresh_core_total_ms": 472.541
+    },
+    {
+      "lagrange_reconstruction_ms": 0.3569,
+      "refresh_polynomial_commitments_ms": 132.5423,
+      "refresh_delta_verify_ms": 338.5052,
+      "refresh_share_update_ms": 0.0164,
+      "post_refresh_reconstruction_ms": 0.3067,
+      "refresh_core_total_ms": 471.37059999999997
+    },
+    {
+      "lagrange_reconstruction_ms": 0.3176,
+      "refresh_polynomial_commitments_ms": 134.5208,
+      "refresh_delta_verify_ms": 352.3314,
+      "refresh_share_update_ms": 0.0193,
+      "post_refresh_reconstruction_ms": 0.3037,
+      "refresh_core_total_ms": 487.17519999999996
+    },
+    {
+      "lagrange_reconstruction_ms": 0.3007,
+      "refresh_polynomial_commitments_ms": 135.4499,
+      "refresh_delta_verify_ms": 343.3114,
+      "refresh_share_update_ms": 0.0165,
+      "post_refresh_reconstruction_ms": 0.3023,
+      "refresh_core_total_ms": 479.0801
+    },
+    {
+      "lagrange_reconstruction_ms": 0.5922,
+      "refresh_polynomial_commitments_ms": 133.7855,
+      "refresh_delta_verify_ms": 338.7514,
+      "refresh_share_update_ms": 0.0194,
+      "post_refresh_reconstruction_ms": 0.3051,
+      "refresh_core_total_ms": 472.8614
+    },
+    {
+      "lagrange_reconstruction_ms": 0.2936,
+      "refresh_polynomial_commitments_ms": 133.4271,
+      "refresh_delta_verify_ms": 338.3481,
+      "refresh_share_update_ms": 0.017,
+      "post_refresh_reconstruction_ms": 0.3451,
+      "refresh_core_total_ms": 472.1373
+    },
+    {
+      "lagrange_reconstruction_ms": 0.3456,
+      "refresh_polynomial_commitments_ms": 133.2258,
+      "refresh_delta_verify_ms": 341.0833,
+      "refresh_share_update_ms": 0.017,
+      "post_refresh_reconstruction_ms": 0.2849,
+      "refresh_core_total_ms": 474.611
+    },
+    {
+      "lagrange_reconstruction_ms": 0.2921,
+      "refresh_polynomial_commitments_ms": 136.5834,
+      "refresh_delta_verify_ms": 342.0676,
+      "refresh_share_update_ms": 0.017,
+      "post_refresh_reconstruction_ms": 0.2724,
+      "refresh_core_total_ms": 478.94040000000007
+    },
+    {
+      "lagrange_reconstruction_ms": 0.314,
+      "refresh_polynomial_commitments_ms": 141.4645,
+      "refresh_delta_verify_ms": 343.4921,
+      "refresh_share_update_ms": 0.0189,
+      "post_refresh_reconstruction_ms": 0.2818,
+      "refresh_core_total_ms": 485.25729999999993
+    },
+    {
+      "lagrange_reconstruction_ms": 0.2797,
+      "refresh_polynomial_commitments_ms": 136.2965,
+      "refresh_delta_verify_ms": 347.3058,
+      "refresh_share_update_ms": 0.0205,
+      "post_refresh_reconstruction_ms": 0.2813,
+      "refresh_core_total_ms": 483.9041
+    },
+    {
+      "lagrange_reconstruction_ms": 0.2844,
+      "refresh_polynomial_commitments_ms": 134.3026,
+      "refresh_delta_verify_ms": 342.4265,
+      "refresh_share_update_ms": 0.0177,
+      "post_refresh_reconstruction_ms": 0.2757,
+      "refresh_core_total_ms": 477.0225
+    },
+    {
+      "lagrange_reconstruction_ms": 0.27,
+      "refresh_polynomial_commitments_ms": 133.0667,
+      "refresh_delta_verify_ms": 338.0187,
+      "refresh_share_update_ms": 0.016,
+      "post_refresh_reconstruction_ms": 0.2733,
+      "refresh_core_total_ms": 471.3747000000001
+    },
+    {
+      "lagrange_reconstruction_ms": 0.2782,
+      "refresh_polynomial_commitments_ms": 136.1916,
+      "refresh_delta_verify_ms": 342.1529,
+      "refresh_share_update_ms": 0.0171,
+      "post_refresh_reconstruction_ms": 0.2739,
+      "refresh_core_total_ms": 478.63550000000004
+    },
+    {
+      "lagrange_reconstruction_ms": 0.2814,
+      "refresh_polynomial_commitments_ms": 131.7121,
+      "refresh_delta_verify_ms": 339.6125,
+      "refresh_share_update_ms": 0.0158,
+      "post_refresh_reconstruction_ms": 0.2796,
+      "refresh_core_total_ms": 471.62000000000006
+    },
+    {
+      "lagrange_reconstruction_ms": 0.2727,
+      "refresh_polynomial_commitments_ms": 138.8473,
+      "refresh_delta_verify_ms": 342.7029,
+      "refresh_share_update_ms": 0.0182,
+      "post_refresh_reconstruction_ms": 0.3432,
+      "refresh_core_total_ms": 481.9116
+    },
+    {
+      "lagrange_reconstruction_ms": 0.3035,
+      "refresh_polynomial_commitments_ms": 132.2356,
+      "refresh_delta_verify_ms": 338.9661,
+      "refresh_share_update_ms": 0.1517,
+      "post_refresh_reconstruction_ms": 0.2759,
+      "refresh_core_total_ms": 471.62929999999994
+    },
+    {
+      "lagrange_reconstruction_ms": 0.2716,
+      "refresh_polynomial_commitments_ms": 130.6894,
+      "refresh_delta_verify_ms": 349.8565,
+      "refresh_share_update_ms": 0.0173,
+      "post_refresh_reconstruction_ms": 0.3713,
+      "refresh_core_total_ms": 480.93449999999996
+    },
+    {
+      "lagrange_reconstruction_ms": 0.2674,
+      "refresh_polynomial_commitments_ms": 131.2626,
+      "refresh_delta_verify_ms": 339.1502,
+      "refresh_share_update_ms": 0.0169,
+      "post_refresh_reconstruction_ms": 0.2748,
+      "refresh_core_total_ms": 470.7045
+    },
+    {
+      "lagrange_reconstruction_ms": 0.273,
+      "refresh_polynomial_commitments_ms": 135.8949,
+      "refresh_delta_verify_ms": 346.9594,
+      "refresh_share_update_ms": 0.0184,
+      "post_refresh_reconstruction_ms": 0.3469,
+      "refresh_core_total_ms": 483.2196
+    },
+    {
+      "lagrange_reconstruction_ms": 0.3226,
+      "refresh_polynomial_commitments_ms": 140.695,
+      "refresh_delta_verify_ms": 360.5272,
+      "refresh_share_update_ms": 0.0177,
+      "post_refresh_reconstruction_ms": 0.2931,
+      "refresh_core_total_ms": 501.53299999999996
+    },
+    {
+      "lagrange_reconstruction_ms": 0.2722,
+      "refresh_polynomial_commitments_ms": 140.1658,
+      "refresh_delta_verify_ms": 361.9164,
+      "refresh_share_update_ms": 0.0179,
+      "post_refresh_reconstruction_ms": 0.2704,
+      "refresh_core_total_ms": 502.3705
+    },
+    {
+      "lagrange_reconstruction_ms": 0.3008,
+      "refresh_polynomial_commitments_ms": 138.7058,
+      "refresh_delta_verify_ms": 346.7724,
+      "refresh_share_update_ms": 0.0158,
+      "post_refresh_reconstruction_ms": 0.3186,
+      "refresh_core_total_ms": 485.81260000000003
+    },
+    {
+      "lagrange_reconstruction_ms": 0.4838,
+      "refresh_polynomial_commitments_ms": 134.9258,
+      "refresh_delta_verify_ms": 355.4118,
+      "refresh_share_update_ms": 0.0158,
+      "post_refresh_reconstruction_ms": 0.2791,
+      "refresh_core_total_ms": 490.6325000000001
+    },
+    {
+      "lagrange_reconstruction_ms": 0.2704,
+      "refresh_polynomial_commitments_ms": 137.681,
+      "refresh_delta_verify_ms": 348.8396,
+      "refresh_share_update_ms": 0.0157,
+      "post_refresh_reconstruction_ms": 0.2698,
+      "refresh_core_total_ms": 486.8061
+    },
+    {
+      "lagrange_reconstruction_ms": 0.3064,
+      "refresh_polynomial_commitments_ms": 133.9159,
+      "refresh_delta_verify_ms": 335.2094,
+      "refresh_share_update_ms": 0.0161,
+      "post_refresh_reconstruction_ms": 0.2741,
+      "refresh_core_total_ms": 469.4155
+    },
+    {
+      "lagrange_reconstruction_ms": 0.2975,
+      "refresh_polynomial_commitments_ms": 133.3999,
+      "refresh_delta_verify_ms": 337.5339,
+      "refresh_share_update_ms": 0.0191,
+      "post_refresh_reconstruction_ms": 0.2717,
+      "refresh_core_total_ms": 471.2246
+    },
+    {
+      "lagrange_reconstruction_ms": 0.2703,
+      "refresh_polynomial_commitments_ms": 132.5783,
+      "refresh_delta_verify_ms": 342.6404,
+      "refresh_share_update_ms": 0.016,
+      "post_refresh_reconstruction_ms": 0.2696,
+      "refresh_core_total_ms": 475.50430000000006
+    },
+    {
+      "lagrange_reconstruction_ms": 0.271,
+      "refresh_polynomial_commitments_ms": 135.5538,
+      "refresh_delta_verify_ms": 336.9913,
+      "refresh_share_update_ms": 0.0138,
+      "post_refresh_reconstruction_ms": 0.2679,
+      "refresh_core_total_ms": 472.82680000000005
+    },
+    {
+      "lagrange_reconstruction_ms": 0.3038,
+      "refresh_polynomial_commitments_ms": 131.4814,
+      "refresh_delta_verify_ms": 336.8389,
+      "refresh_share_update_ms": 0.0147,
+      "post_refresh_reconstruction_ms": 0.2678,
+      "refresh_core_total_ms": 468.60280000000006
+    },
+    {
+      "lagrange_reconstruction_ms": 0.2992,
+      "refresh_polynomial_commitments_ms": 133.7522,
+      "refresh_delta_verify_ms": 334.6989,
+      "refresh_share_update_ms": 0.0138,
+      "post_refresh_reconstruction_ms": 0.2729,
+      "refresh_core_total_ms": 468.7378
+    },
+    {
+      "lagrange_reconstruction_ms": 0.3003,
+      "refresh_polynomial_commitments_ms": 134.1081,
+      "refresh_delta_verify_ms": 346.4925,
+      "refresh_share_update_ms": 0.0151,
+      "post_refresh_reconstruction_ms": 0.2697,
+      "refresh_core_total_ms": 480.8854
+    },
+    {
+      "lagrange_reconstruction_ms": 0.2932,
+      "refresh_polynomial_commitments_ms": 136.7245,
+      "refresh_delta_verify_ms": 349.1946,
+      "refresh_share_update_ms": 0.0125,
+      "post_refresh_reconstruction_ms": 0.2677,
+      "refresh_core_total_ms": 486.19929999999994
+    },
+    {
+      "lagrange_reconstruction_ms": 0.2688,
+      "refresh_polynomial_commitments_ms": 138.5535,
+      "refresh_delta_verify_ms": 342.5982,
+      "refresh_share_update_ms": 0.015,
+      "post_refresh_reconstruction_ms": 0.2711,
+      "refresh_core_total_ms": 481.4378
+    },
+    {
+      "lagrange_reconstruction_ms": 0.2655,
+      "refresh_polynomial_commitments_ms": 131.9748,
+      "refresh_delta_verify_ms": 343.9386,
+      "refresh_share_update_ms": 0.0138,
+      "post_refresh_reconstruction_ms": 0.2736,
+      "refresh_core_total_ms": 476.2008
+    },
+    {
+      "lagrange_reconstruction_ms": 0.27,
+      "refresh_polynomial_commitments_ms": 132.1017,
+      "refresh_delta_verify_ms": 351.7623,
+      "refresh_share_update_ms": 0.0134,
+      "post_refresh_reconstruction_ms": 0.3235,
+      "refresh_core_total_ms": 484.2009
+    },
+    {
+      "lagrange_reconstruction_ms": 0.3447,
+      "refresh_polynomial_commitments_ms": 139.528,
+      "refresh_delta_verify_ms": 342.5458,
+      "refresh_share_update_ms": 0.0135,
+      "post_refresh_reconstruction_ms": 0.2717,
+      "refresh_core_total_ms": 482.35900000000004
+    },
+    {
+      "lagrange_reconstruction_ms": 0.2747,
+      "refresh_polynomial_commitments_ms": 135.0625,
+      "refresh_delta_verify_ms": 339.5094,
+      "refresh_share_update_ms": 0.015,
+      "post_refresh_reconstruction_ms": 0.3241,
+      "refresh_core_total_ms": 474.911
+    }
+  ]
+}

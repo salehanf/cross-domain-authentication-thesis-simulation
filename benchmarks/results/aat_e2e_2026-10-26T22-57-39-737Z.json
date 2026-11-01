@@ -1,0 +1,69 @@
+{
+  "benchmark": "AAT issuance end-to-end (Phase 3)",
+  "created_at": "2026-10-26T22:57:40.108Z",
+  "warmup_runs": 1,
+  "measured_runs": 2,
+  "environment": {
+    "platform": "win32",
+    "arch": "x64",
+    "node": "v26.1.0",
+    "cpu_model": "12th Gen Intel(R) Core(TM) i7-12650H",
+    "cpu_logical_cores": 16,
+    "memory_total_bytes": 16782184448
+  },
+  "metadata": {
+    "thesis_phase": 3,
+    "phase_name": "Admin Approval Token issuance",
+    "admins_n": 5,
+    "threshold_t": 3,
+    "threshold_signature": "FROST",
+    "includes_process_startup": true,
+    "includes_artifact_serialization": true,
+    "internal_frost_timing_reported_separately": true,
+    "persistent_state_change": false
+  },
+  "summary": {
+    "aat_issue_wall_ms": {
+      "n": 2,
+      "mean_ms": 116.26284999999997,
+      "median_ms": 116.26284999999997,
+      "stddev_ms": 0.41599091937202853,
+      "min_ms": 115.96869999999998,
+      "max_ms": 116.55699999999996,
+      "p95_ms": 116.55699999999996,
+      "cv_percent": 0.3578021004749399
+    },
+    "aat_frost_internal_ms": {
+      "n": 2,
+      "mean_ms": 1.83345,
+      "median_ms": 1.83345,
+      "stddev_ms": 0.07969093423972408,
+      "min_ms": 1.7771,
+      "max_ms": 1.8898000000000001,
+      "p95_ms": 1.8898000000000001,
+      "cv_percent": 4.346501635699042
+    },
+    "aat_signature_bytes": {
+      "n": 2,
+      "mean_ms": 64,
+      "median_ms": 64,
+      "stddev_ms": 0,
+      "min_ms": 64,
+      "max_ms": 64,
+      "p95_ms": 64,
+      "cv_percent": 0
+    }
+  },
+  "samples": [
+    {
+      "aat_issue_wall_ms": 115.96869999999998,
+      "aat_frost_internal_ms": 1.7771,
+      "aat_signature_bytes": 64
+    },
+    {
+      "aat_issue_wall_ms": 116.55699999999996,
+      "aat_frost_internal_ms": 1.8898000000000001,
+      "aat_signature_bytes": 64
+    }
+  ]
+}

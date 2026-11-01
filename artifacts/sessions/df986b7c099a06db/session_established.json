@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "challenge_id": "df986b7c099a06db",
+  "service_id": "benchmark-service",
+  "D_id_src": "12345",
+  "sid": "417059487450710831780155558874623491708967762767823062118706219235250821997",
+  "reference_auth": "290946d1d21b8d2a3370c74a792b359ed1980d2a6e08b006e77ac13f37ce5e46",
+  "service_key_id": "f06888e26a2fa4215a972978b7037e2b840a9e62c504002ce4965b2d693dd37e",
+  "transcript": "c8aad90a72a635cbd12f35784fd1b38d464da633cfea52863c6dee191992d018",
+  "server_confirmation_mac": "4c0d587dfb3d89eea0f15a6a150c11e73d7bc14d610bb3b751db7ec557bee997",
+  "user_confirmation_mac": "074d82da570fe8f4b4523e0ecbb4b59bbcfeafef171425c7169dd9efa05e0df6",
+  "shared_secret_match": true,
+  "session_key_match": true,
+  "service_signature_valid": true,
+  "server_mac_valid": true,
+  "user_mac_valid": true,
+  "status": "ESTABLISHED",
+  "established_at": "2026-10-25T21:16:28.581Z"
+}

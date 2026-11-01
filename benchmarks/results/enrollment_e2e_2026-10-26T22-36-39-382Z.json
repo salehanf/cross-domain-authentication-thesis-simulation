@@ -1,0 +1,154 @@
+{
+  "benchmark": "User Enrollment end-to-end (Phase 4)",
+  "created_at": "2026-10-26T22:37:04.332Z",
+  "warmup_runs": 1,
+  "measured_runs": 2,
+  "environment": {
+    "platform": "win32",
+    "arch": "x64",
+    "node": "v26.1.0",
+    "cpu_model": "12th Gen Intel(R) Core(TM) i7-12650H",
+    "cpu_logical_cores": 16,
+    "memory_total_bytes": 16782184448
+  },
+  "metadata": {
+    "thesis_phase": 4,
+    "phase_name": "User Enrollment",
+    "admins_n": 5,
+    "threshold_t": 3,
+    "aat_issuance_included": false,
+    "aat_exclusion_reason": "AAT issuance is thesis Phase 3 and is benchmarked separately.",
+    "state_reset": "BAS registry, consumed AAT nullifiers, and SignedRoot files are restored after every sample.",
+    "pvss_proof_system": "Groth16",
+    "link_proof_system": "Groth16",
+    "note": "enrollment_e2e_wall_ms starts immediately after a fresh valid AAT has been issued. It includes PVSS enrollment, PVSS proof-input generation, all per-admin PVSS Groth16 proofs, PVSS finalization, link-proof input generation, link Groth16 proof generation, Enroll_Package construction, and BAS verification/SMT insertion/new SignedRoot creation. Per-sample cleanup and BAS/root rollback are excluded from the measured interval."
+  },
+  "summary": {
+    "pvss_enrollment_wall_ms": {
+      "n": 2,
+      "mean_ms": 955.3186000000005,
+      "median_ms": 955.3186000000005,
+      "stddev_ms": 0.5407952662520601,
+      "min_ms": 954.9362000000001,
+      "max_ms": 955.7010000000009,
+      "p95_ms": 955.7010000000009,
+      "cv_percent": 0.05660889113349827
+    },
+    "pvss_proof_input_generation_wall_ms": {
+      "n": 2,
+      "mean_ms": 57.23395000000164,
+      "median_ms": 57.23395000000164,
+      "stddev_ms": 2.150806696336241,
+      "min_ms": 55.71310000000085,
+      "max_ms": 58.75480000000243,
+      "p95_ms": 58.75480000000243,
+      "cv_percent": 3.7579211225787827
+    },
+    "pvss_groth16_proofs_sum_ms": {
+      "n": 2,
+      "mean_ms": 2750.900300000001,
+      "median_ms": 2750.900300000001,
+      "stddev_ms": 57.334621981663545,
+      "min_ms": 2710.3585999999996,
+      "max_ms": 2791.4420000000027,
+      "p95_ms": 2791.4420000000027,
+      "cv_percent": 2.0842130113426327
+    },
+    "pvss_groth16_batch_wall_ms": {
+      "n": 2,
+      "mean_ms": 2757.6683999999996,
+      "median_ms": 2757.6683999999996,
+      "stddev_ms": 57.40434271028808,
+      "min_ms": 2717.0773999999983,
+      "max_ms": 2798.259400000001,
+      "p95_ms": 2798.259400000001,
+      "cv_percent": 2.081626010955055
+    },
+    "pvss_finalize_wall_ms": {
+      "n": 2,
+      "mean_ms": 427.1376,
+      "median_ms": 427.1376,
+      "stddev_ms": 0.5912826904292899,
+      "min_ms": 426.71949999999924,
+      "max_ms": 427.5557000000008,
+      "p95_ms": 427.5557000000008,
+      "cv_percent": 0.1384290894618713
+    },
+    "link_proof_input_generation_wall_ms": {
+      "n": 2,
+      "mean_ms": 701.7903999999999,
+      "median_ms": 701.7903999999999,
+      "stddev_ms": 3.618548242043458,
+      "min_ms": 699.2317000000003,
+      "max_ms": 704.3490999999995,
+      "p95_ms": 704.3490999999995,
+      "cv_percent": 0.5156166630440454
+    },
+    "link_groth16_proof_generation_ms": {
+      "n": 2,
+      "mean_ms": 531.6501500000004,
+      "median_ms": 531.6501500000004,
+      "stddev_ms": 0.3826154793003022,
+      "min_ms": 531.3796000000002,
+      "max_ms": 531.9207000000006,
+      "p95_ms": 531.9207000000006,
+      "cv_percent": 0.0719675296433758
+    },
+    "enroll_package_build_wall_ms": {
+      "n": 2,
+      "mean_ms": 377.04269999999997,
+      "median_ms": 377.04269999999997,
+      "stddev_ms": 1.526077855157988,
+      "min_ms": 375.96359999999913,
+      "max_ms": 378.1218000000008,
+      "p95_ms": 378.1218000000008,
+      "cv_percent": 0.4047493440817149
+    },
+    "bas_enrollment_verify_wall_ms": {
+      "n": 2,
+      "mean_ms": 1011.1794000000009,
+      "median_ms": 1011.1794000000009,
+      "stddev_ms": 11.242007871372756,
+      "min_ms": 1003.2301000000007,
+      "max_ms": 1019.1287000000011,
+      "p95_ms": 1019.1287000000011,
+      "cv_percent": 1.111771844973577
+    },
+    "enrollment_e2e_wall_ms": {
+      "n": 2,
+      "mean_ms": 6821.843399999999,
+      "median_ms": 6821.843399999999,
+      "stddev_ms": 68.30326237142714,
+      "min_ms": 6773.545699999999,
+      "max_ms": 6870.141099999999,
+      "p95_ms": 6870.141099999999,
+      "cv_percent": 1.0012434816581564
+    }
+  },
+  "samples": [
+    {
+      "pvss_enrollment_wall_ms": 954.9362000000001,
+      "pvss_proof_input_generation_wall_ms": 55.71310000000085,
+      "pvss_groth16_proofs_sum_ms": 2791.4420000000027,
+      "pvss_groth16_batch_wall_ms": 2798.259400000001,
+      "pvss_finalize_wall_ms": 427.5557000000008,
+      "link_proof_input_generation_wall_ms": 704.3490999999995,
+      "link_groth16_proof_generation_ms": 531.9207000000006,
+      "enroll_package_build_wall_ms": 375.96359999999913,
+      "bas_enrollment_verify_wall_ms": 1019.1287000000011,
+      "enrollment_e2e_wall_ms": 6870.141099999999
+    },
+    {
+      "pvss_enrollment_wall_ms": 955.7010000000009,
+      "pvss_proof_input_generation_wall_ms": 58.75480000000243,
+      "pvss_groth16_proofs_sum_ms": 2710.3585999999996,
+      "pvss_groth16_batch_wall_ms": 2717.0773999999983,
+      "pvss_finalize_wall_ms": 426.71949999999924,
+      "link_proof_input_generation_wall_ms": 699.2317000000003,
+      "link_groth16_proof_generation_ms": 531.3796000000002,
+      "enroll_package_build_wall_ms": 378.1218000000008,
+      "bas_enrollment_verify_wall_ms": 1003.2301000000007,
+      "enrollment_e2e_wall_ms": 6773.545699999999
+    }
+  ]
+}

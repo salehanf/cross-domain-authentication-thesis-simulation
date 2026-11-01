@@ -1,0 +1,83 @@
+{
+  "benchmark": "Groth16 auth crypto-core (process-isolated)",
+  "created_at": "2026-10-26T22:26:13.382Z",
+  "warmup_runs": 1,
+  "measured_runs": 2,
+  "environment": {
+    "platform": "win32",
+    "arch": "x64",
+    "node": "v26.1.0",
+    "cpu_model": "12th Gen Intel(R) Core(TM) i7-12650H",
+    "cpu_logical_cores": 16,
+    "memory_total_bytes": 16782184448
+  },
+  "metadata": {
+    "circuit": "auth",
+    "proof_system": "Groth16",
+    "curve": "bn128",
+    "isolation": "fresh Node process per sample",
+    "node_expose_gc": true,
+    "process_startup_inside_sample": false,
+    "file_io_inside_sample": false,
+    "witness_calculator_setup_inside_sample": false,
+    "local_backend_warmup_inside_sample": false,
+    "measurement_boundary": "Only calculateWTNSBin, groth16.prove from in-memory witness/ZKey, and groth16.verify are timed.",
+    "rationale": "Fresh-process isolation prevents memory/GC state from previous proofs from contaminating later samples."
+  },
+  "summary": {
+    "witness_generation_core_ms": {
+      "n": 2,
+      "mean_ms": 40.95505000000003,
+      "median_ms": 40.95505000000003,
+      "stddev_ms": 0.6090310706359935,
+      "min_ms": 40.524400000000014,
+      "max_ms": 41.38570000000004,
+      "p95_ms": 41.38570000000004,
+      "cv_percent": 1.4870719743621192
+    },
+    "groth16_prove_from_witness_ms": {
+      "n": 2,
+      "mean_ms": 772.1975500000001,
+      "median_ms": 772.1975500000001,
+      "stddev_ms": 8.357931442946846,
+      "min_ms": 766.2876000000001,
+      "max_ms": 778.1075000000001,
+      "p95_ms": 778.1075000000001,
+      "cv_percent": 1.0823566382652787
+    },
+    "groth16_verify_core_ms": {
+      "n": 2,
+      "mean_ms": 12.515349999999899,
+      "median_ms": 12.515349999999899,
+      "stddev_ms": 2.716492121284643,
+      "min_ms": 10.594499999999698,
+      "max_ms": 14.436200000000099,
+      "p95_ms": 14.436200000000099,
+      "cv_percent": 21.705282882897123
+    },
+    "groth16_crypto_core_total_ms": {
+      "n": 2,
+      "mean_ms": 825.66795,
+      "median_ms": 825.66795,
+      "stddev_ms": 11.683454634867482,
+      "min_ms": 817.4064999999998,
+      "max_ms": 833.9294000000002,
+      "p95_ms": 833.9294000000002,
+      "cv_percent": 1.4150306591006083
+    }
+  },
+  "samples": [
+    {
+      "witness_generation_core_ms": 40.524400000000014,
+      "groth16_prove_from_witness_ms": 766.2876000000001,
+      "groth16_verify_core_ms": 10.594499999999698,
+      "groth16_crypto_core_total_ms": 817.4064999999998
+    },
+    {
+      "witness_generation_core_ms": 41.38570000000004,
+      "groth16_prove_from_witness_ms": 778.1075000000001,
+      "groth16_verify_core_ms": 14.436200000000099,
+      "groth16_crypto_core_total_ms": 833.9294000000002
+    }
+  ]
+}

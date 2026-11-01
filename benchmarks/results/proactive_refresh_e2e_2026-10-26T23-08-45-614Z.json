@@ -1,0 +1,155 @@
+{
+  "benchmark": "Proactive share refresh end-to-end (Phase 8)",
+  "created_at": "2026-10-26T23:08:49.418Z",
+  "warmup_runs": 1,
+  "measured_runs": 2,
+  "environment": {
+    "platform": "win32",
+    "arch": "x64",
+    "node": "v26.1.0",
+    "cpu_model": "12th Gen Intel(R) Core(TM) i7-12650H",
+    "cpu_logical_cores": 16,
+    "memory_total_bytes": 16782184448
+  },
+  "metadata": {
+    "thesis_phase": 8,
+    "phase_name": "Proactive Share Refresh",
+    "enrollment_id": "33cc8699fd889aa9",
+    "admins_n": 5,
+    "threshold_t": 3,
+    "baseline_epoch": 0,
+    "bootstrap_performed_before_benchmark": true,
+    "bootstrap_included_in_timings": false,
+    "private_state_reset": "Administrator share files are restored from a byte-for-byte baseline after every sample.",
+    "public_state_requirement": "BAS registry, Enroll_Package and SignedRoot directory must remain byte-for-byte unchanged.",
+    "measurement_boundary": "refresh_wall_ms is the full proactive-refresh.js process wall-clock time; refresh_internal_total_ms is the implementation internal timer beginning after crypto setup/loading and ending after invariant checks and private share commit."
+  },
+  "summary": {
+    "refresh_wall_ms": {
+      "n": 2,
+      "mean_ms": 1241.2275499999998,
+      "median_ms": 1241.2275499999998,
+      "stddev_ms": 29.568165030062712,
+      "min_ms": 1220.3196999999996,
+      "max_ms": 1262.1354000000001,
+      "p95_ms": 1262.1354000000001,
+      "cv_percent": 2.3821711844909275
+    },
+    "refresh_polynomial_commitments_internal_ms": {
+      "n": 2,
+      "mean_ms": 138.5772,
+      "median_ms": 138.5772,
+      "stddev_ms": 4.894734560729522,
+      "min_ms": 135.1161,
+      "max_ms": 142.0383,
+      "p95_ms": 142.0383,
+      "cv_percent": 3.532135561065978
+    },
+    "refresh_delta_generation_verification_internal_ms": {
+      "n": 2,
+      "mean_ms": 351.63535,
+      "median_ms": 351.63535,
+      "stddev_ms": 6.85872364547516,
+      "min_ms": 346.7855,
+      "max_ms": 356.4852,
+      "p95_ms": 356.4852,
+      "cv_percent": 1.9505216541724717
+    },
+    "refresh_share_update_internal_ms": {
+      "n": 2,
+      "mean_ms": 0.08865,
+      "median_ms": 0.08865,
+      "stddev_ms": 0.000777817459305205,
+      "min_ms": 0.0881,
+      "max_ms": 0.0892,
+      "p95_ms": 0.0892,
+      "cv_percent": 0.8774026613707896
+    },
+    "refresh_threshold_invariant_verification_internal_ms": {
+      "n": 2,
+      "mean_ms": 18.013550000000002,
+      "median_ms": 18.013550000000002,
+      "stddev_ms": 1.5219059251478064,
+      "min_ms": 16.9374,
+      "max_ms": 19.0897,
+      "p95_ms": 19.0897,
+      "cv_percent": 8.448672944243674
+    },
+    "refresh_private_share_commit_internal_ms": {
+      "n": 2,
+      "mean_ms": 2.07285,
+      "median_ms": 2.07285,
+      "stddev_ms": 0.1952321822856058,
+      "min_ms": 1.9348,
+      "max_ms": 2.2109,
+      "p95_ms": 2.2109,
+      "cv_percent": 9.418538837137556
+    },
+    "refresh_internal_total_ms": {
+      "n": 2,
+      "mean_ms": 515.401,
+      "median_ms": 515.401,
+      "stddev_ms": 13.087132306200608,
+      "min_ms": 506.147,
+      "max_ms": 524.655,
+      "p95_ms": 524.655,
+      "cv_percent": 2.5392136038154
+    },
+    "refresh_public_commitment_count": {
+      "n": 2,
+      "mean_ms": 10,
+      "median_ms": 10,
+      "stddev_ms": 0,
+      "min_ms": 10,
+      "max_ms": 10,
+      "p95_ms": 10,
+      "cv_percent": 0
+    },
+    "refresh_delta_evaluations": {
+      "n": 2,
+      "mean_ms": 25,
+      "median_ms": 25,
+      "stddev_ms": 0,
+      "min_ms": 25,
+      "max_ms": 25,
+      "p95_ms": 25,
+      "cv_percent": 0
+    },
+    "refresh_peer_delta_messages": {
+      "n": 2,
+      "mean_ms": 20,
+      "median_ms": 20,
+      "stddev_ms": 0,
+      "min_ms": 20,
+      "max_ms": 20,
+      "p95_ms": 20,
+      "cv_percent": 0
+    }
+  },
+  "samples": [
+    {
+      "refresh_wall_ms": 1262.1354000000001,
+      "refresh_polynomial_commitments_internal_ms": 142.0383,
+      "refresh_delta_generation_verification_internal_ms": 356.4852,
+      "refresh_share_update_internal_ms": 0.0881,
+      "refresh_threshold_invariant_verification_internal_ms": 19.0897,
+      "refresh_private_share_commit_internal_ms": 2.2109,
+      "refresh_internal_total_ms": 524.655,
+      "refresh_public_commitment_count": 10,
+      "refresh_delta_evaluations": 25,
+      "refresh_peer_delta_messages": 20
+    },
+    {
+      "refresh_wall_ms": 1220.3196999999996,
+      "refresh_polynomial_commitments_internal_ms": 135.1161,
+      "refresh_delta_generation_verification_internal_ms": 346.7855,
+      "refresh_share_update_internal_ms": 0.0892,
+      "refresh_threshold_invariant_verification_internal_ms": 16.9374,
+      "refresh_private_share_commit_internal_ms": 1.9348,
+      "refresh_internal_total_ms": 506.147,
+      "refresh_public_commitment_count": 10,
+      "refresh_delta_evaluations": 25,
+      "refresh_peer_delta_messages": 20
+    }
+  ]
+}

@@ -1,0 +1,424 @@
+{
+  "benchmark": "SMT depth=64",
+  "created_at": "2026-10-26T11:15:50.455Z",
+  "warmup_runs": 5,
+  "measured_runs": 50,
+  "environment": {
+    "platform": "win32",
+    "arch": "x64",
+    "node": "v26.1.0",
+    "cpu_model": "12th Gen Intel(R) Core(TM) i7-12650H",
+    "cpu_logical_cores": 16,
+    "memory_total_bytes": 16782184448
+  },
+  "metadata": {
+    "depth": 64,
+    "capacity": "18446744073709551616",
+    "poseidon_setup_ms_one_time": 279.8527,
+    "measurement_scope": "Shared Poseidon setup excluded from all samples."
+  },
+  "summary": {
+    "tree_initialization_ms": {
+      "n": 50,
+      "mean_ms": 12.150300000000007,
+      "median_ms": 11.546499999999696,
+      "stddev_ms": 1.3135778276857673,
+      "min_ms": 11.085500000000138,
+      "max_ms": 16.607599999999366,
+      "p95_ms": 14.791799999999967,
+      "cv_percent": 10.811073205482717
+    },
+    "insert_ms": {
+      "n": 50,
+      "mean_ms": 12.138068000000048,
+      "median_ms": 11.907349999999951,
+      "stddev_ms": 1.024528277603,
+      "min_ms": 11.004500000000007,
+      "max_ms": 16.295900000000074,
+      "p95_ms": 14.17950000000019,
+      "cv_percent": 8.440620678702706
+    },
+    "proof_generation_ms": {
+      "n": 50,
+      "mean_ms": 0.04669799999999668,
+      "median_ms": 0.04610000000002401,
+      "stddev_ms": 0.004961874645767554,
+      "min_ms": 0.037699999999858846,
+      "max_ms": 0.06440000000020518,
+      "p95_ms": 0.05510000000003856,
+      "cv_percent": 10.625454293048753
+    },
+    "proof_verify_ms": {
+      "n": 50,
+      "mean_ms": 11.824950000000053,
+      "median_ms": 11.483150000000023,
+      "stddev_ms": 0.9056535622388551,
+      "min_ms": 10.973799999999756,
+      "max_ms": 15.339800000000196,
+      "p95_ms": 14.327899999999772,
+      "cv_percent": 7.658836293082431
+    },
+    "remove_ms": {
+      "n": 50,
+      "mean_ms": 11.422684000000018,
+      "median_ms": 11.20439999999985,
+      "stddev_ms": 0.5373295106395043,
+      "min_ms": 10.959199999999328,
+      "max_ms": 13.510000000000218,
+      "p95_ms": 12.41820000000007,
+      "cv_percent": 4.704056512808228
+    }
+  },
+  "samples": [
+    {
+      "tree_initialization_ms": 15.676500000000033,
+      "insert_ms": 11.64200000000028,
+      "proof_generation_ms": 0.047599999999874854,
+      "proof_verify_ms": 12.021799999999985,
+      "remove_ms": 11.03729999999996
+    },
+    {
+      "tree_initialization_ms": 12.490999999999985,
+      "insert_ms": 14.548899999999776,
+      "proof_generation_ms": 0.04809999999997672,
+      "proof_verify_ms": 12.054000000000087,
+      "remove_ms": 11.271100000000388
+    },
+    {
+      "tree_initialization_ms": 11.41859999999997,
+      "insert_ms": 12.369599999999991,
+      "proof_generation_ms": 0.06440000000020518,
+      "proof_verify_ms": 12.438699999999699,
+      "remove_ms": 11.196699999999964
+    },
+    {
+      "tree_initialization_ms": 12.91989999999987,
+      "insert_ms": 11.888000000000375,
+      "proof_generation_ms": 0.050499999999829015,
+      "proof_verify_ms": 15.339800000000196,
+      "remove_ms": 12.41820000000007
+    },
+    {
+      "tree_initialization_ms": 14.02980000000025,
+      "insert_ms": 12.90560000000005,
+      "proof_generation_ms": 0.053100000000085856,
+      "proof_verify_ms": 13.86790000000019,
+      "remove_ms": 13.283799999999701
+    },
+    {
+      "tree_initialization_ms": 14.405699999999797,
+      "insert_ms": 13.578500000000076,
+      "proof_generation_ms": 0.04500000000007276,
+      "proof_verify_ms": 11.103100000000268,
+      "remove_ms": 11.057400000000143
+    },
+    {
+      "tree_initialization_ms": 12.074599999999919,
+      "insert_ms": 16.295900000000074,
+      "proof_generation_ms": 0.06210000000010041,
+      "proof_verify_ms": 14.327899999999772,
+      "remove_ms": 13.510000000000218
+    },
+    {
+      "tree_initialization_ms": 14.447400000000016,
+      "insert_ms": 12.210900000000038,
+      "proof_generation_ms": 0.04359999999996944,
+      "proof_verify_ms": 11.372200000000248,
+      "remove_ms": 11.209800000000087
+    },
+    {
+      "tree_initialization_ms": 12.01260000000002,
+      "insert_ms": 11.29970000000003,
+      "proof_generation_ms": 0.047000000000025466,
+      "proof_verify_ms": 11.109599999999773,
+      "remove_ms": 11.152800000000298
+    },
+    {
+      "tree_initialization_ms": 11.535199999999804,
+      "insert_ms": 11.612300000000232,
+      "proof_generation_ms": 0.04489999999987049,
+      "proof_verify_ms": 11.635799999999563,
+      "remove_ms": 11.281200000000354
+    },
+    {
+      "tree_initialization_ms": 11.62440000000015,
+      "insert_ms": 12.018800000000283,
+      "proof_generation_ms": 0.04629999999997381,
+      "proof_verify_ms": 11.533199999999852,
+      "remove_ms": 11.141700000000128
+    },
+    {
+      "tree_initialization_ms": 11.826700000000073,
+      "insert_ms": 11.561099999999897,
+      "proof_generation_ms": 0.04790000000002692,
+      "proof_verify_ms": 11.286099999999806,
+      "remove_ms": 11.925200000000132
+    },
+    {
+      "tree_initialization_ms": 14.791799999999967,
+      "insert_ms": 11.898099999999886,
+      "proof_generation_ms": 0.0464999999999236,
+      "proof_verify_ms": 11.747399999999743,
+      "remove_ms": 11.473199999999906
+    },
+    {
+      "tree_initialization_ms": 14.31269999999995,
+      "insert_ms": 13.831300000000283,
+      "proof_generation_ms": 0.04580000000032669,
+      "proof_verify_ms": 14.466100000000097,
+      "remove_ms": 11.306099999999788
+    },
+    {
+      "tree_initialization_ms": 12.570300000000316,
+      "insert_ms": 12.510399999999663,
+      "proof_generation_ms": 0.05510000000003856,
+      "proof_verify_ms": 11.713199999999688,
+      "remove_ms": 11.324800000000323
+    },
+    {
+      "tree_initialization_ms": 11.085500000000138,
+      "insert_ms": 12.027900000000045,
+      "proof_generation_ms": 0.05040000000008149,
+      "proof_verify_ms": 11.344300000000203,
+      "remove_ms": 11.018999999999778
+    },
+    {
+      "tree_initialization_ms": 11.380599999999959,
+      "insert_ms": 11.450600000000122,
+      "proof_generation_ms": 0.04330000000027212,
+      "proof_verify_ms": 11.353300000000218,
+      "remove_ms": 11.036399999999958
+    },
+    {
+      "tree_initialization_ms": 11.268500000000131,
+      "insert_ms": 11.189300000000003,
+      "proof_generation_ms": 0.04550000000017462,
+      "proof_verify_ms": 11.302500000000236,
+      "remove_ms": 12.06690000000026
+    },
+    {
+      "tree_initialization_ms": 11.446599999999762,
+      "insert_ms": 11.14409999999998,
+      "proof_generation_ms": 0.037699999999858846,
+      "proof_verify_ms": 11.87920000000031,
+      "remove_ms": 11.717000000000098
+    },
+    {
+      "tree_initialization_ms": 11.339699999999993,
+      "insert_ms": 11.076399999999921,
+      "proof_generation_ms": 0.04379999999991924,
+      "proof_verify_ms": 12.05390000000034,
+      "remove_ms": 11.327800000000025
+    },
+    {
+      "tree_initialization_ms": 11.449200000000019,
+      "insert_ms": 11.898400000000038,
+      "proof_generation_ms": 0.04469999999992069,
+      "proof_verify_ms": 11.451399999999921,
+      "remove_ms": 11.99499999999989
+    },
+    {
+      "tree_initialization_ms": 11.194100000000162,
+      "insert_ms": 11.738299999999981,
+      "proof_generation_ms": 0.045200000000022555,
+      "proof_verify_ms": 11.936999999999898,
+      "remove_ms": 11.593199999999797
+    },
+    {
+      "tree_initialization_ms": 11.32400000000007,
+      "insert_ms": 11.489199999999983,
+      "proof_generation_ms": 0.042599999999765714,
+      "proof_verify_ms": 11.054499999999734,
+      "remove_ms": 11.119000000000142
+    },
+    {
+      "tree_initialization_ms": 11.389000000000124,
+      "insert_ms": 13.869300000000294,
+      "proof_generation_ms": 0.052199999999629654,
+      "proof_verify_ms": 11.827800000000025,
+      "remove_ms": 11.052000000000135
+    },
+    {
+      "tree_initialization_ms": 11.648299999999836,
+      "insert_ms": 11.443699999999808,
+      "proof_generation_ms": 0.05050000000028376,
+      "proof_verify_ms": 11.429200000000037,
+      "remove_ms": 11.091600000000199
+    },
+    {
+      "tree_initialization_ms": 11.307900000000245,
+      "insert_ms": 11.653600000000097,
+      "proof_generation_ms": 0.049399999999877764,
+      "proof_verify_ms": 10.973799999999756,
+      "remove_ms": 11.107499999999163
+    },
+    {
+      "tree_initialization_ms": 12.0604000000003,
+      "insert_ms": 12.099900000000162,
+      "proof_generation_ms": 0.042000000000371074,
+      "proof_verify_ms": 11.425400000000081,
+      "remove_ms": 11.018299999999726
+    },
+    {
+      "tree_initialization_ms": 11.557799999999588,
+      "insert_ms": 11.234800000000178,
+      "proof_generation_ms": 0.04069999999956053,
+      "proof_verify_ms": 11.270599999999831,
+      "remove_ms": 11.749800000000505
+    },
+    {
+      "tree_initialization_ms": 11.956500000000233,
+      "insert_ms": 12.07129999999961,
+      "proof_generation_ms": 0.04279999999926076,
+      "proof_verify_ms": 11.586199999999735,
+      "remove_ms": 11.641899999999623
+    },
+    {
+      "tree_initialization_ms": 14.047199999999975,
+      "insert_ms": 11.65979999999945,
+      "proof_generation_ms": 0.04460000000017317,
+      "proof_verify_ms": 13.024499999999534,
+      "remove_ms": 12.001599999999598
+    },
+    {
+      "tree_initialization_ms": 11.171199999999772,
+      "insert_ms": 12.152200000000448,
+      "proof_generation_ms": 0.045900000000074215,
+      "proof_verify_ms": 12.065800000000309,
+      "remove_ms": 11.186499999999796
+    },
+    {
+      "tree_initialization_ms": 13.731700000000274,
+      "insert_ms": 13.910499999999956,
+      "proof_generation_ms": 0.04830000000038126,
+      "proof_verify_ms": 11.345700000000761,
+      "remove_ms": 11.181500000000597
+    },
+    {
+      "tree_initialization_ms": 11.363099999999577,
+      "insert_ms": 12.14930000000004,
+      "proof_generation_ms": 0.04640000000017608,
+      "proof_verify_ms": 11.421400000000176,
+      "remove_ms": 12.035200000000259
+    },
+    {
+      "tree_initialization_ms": 16.607599999999366,
+      "insert_ms": 14.17950000000019,
+      "proof_generation_ms": 0.0500000000001819,
+      "proof_verify_ms": 11.846599999999853,
+      "remove_ms": 11.156299999999646
+    },
+    {
+      "tree_initialization_ms": 12.442200000000412,
+      "insert_ms": 11.916299999999865,
+      "proof_generation_ms": 0.04490000000077998,
+      "proof_verify_ms": 12.127400000000307,
+      "remove_ms": 11.198999999999614
+    },
+    {
+      "tree_initialization_ms": 11.714500000000044,
+      "insert_ms": 11.921400000000176,
+      "proof_generation_ms": 0.040799999999762804,
+      "proof_verify_ms": 11.170000000000073,
+      "remove_ms": 10.98410000000058
+    },
+    {
+      "tree_initialization_ms": 11.451700000000528,
+      "insert_ms": 11.158900000000358,
+      "proof_generation_ms": 0.042599999999765714,
+      "proof_verify_ms": 10.989199999999983,
+      "remove_ms": 10.959199999999328
+    },
+    {
+      "tree_initialization_ms": 11.341999999999643,
+      "insert_ms": 12.444100000000617,
+      "proof_generation_ms": 0.04309999999986758,
+      "proof_verify_ms": 12.057800000000498,
+      "remove_ms": 11.751000000000204
+    },
+    {
+      "tree_initialization_ms": 11.206100000000333,
+      "insert_ms": 11.004500000000007,
+      "proof_generation_ms": 0.03809999999975844,
+      "proof_verify_ms": 11.962900000000445,
+      "remove_ms": 11.617799999999988
+    },
+    {
+      "tree_initialization_ms": 11.314500000000407,
+      "insert_ms": 11.386000000000422,
+      "proof_generation_ms": 0.04689999999936845,
+      "proof_verify_ms": 11.487199999999575,
+      "remove_ms": 11.097499999999854
+    },
+    {
+      "tree_initialization_ms": 11.212099999999737,
+      "insert_ms": 11.490499999999884,
+      "proof_generation_ms": 0.04830000000038126,
+      "proof_verify_ms": 11.279700000000048,
+      "remove_ms": 11.317900000000009
+    },
+    {
+      "tree_initialization_ms": 11.188199999999597,
+      "insert_ms": 12.263599999999315,
+      "proof_generation_ms": 0.049699999999575084,
+      "proof_verify_ms": 12.01260000000002,
+      "remove_ms": 11.462300000000141
+    },
+    {
+      "tree_initialization_ms": 11.649099999999635,
+      "insert_ms": 11.61620000000039,
+      "proof_generation_ms": 0.042400000000270666,
+      "proof_verify_ms": 12.103300000000672,
+      "remove_ms": 11.318999999999505
+    },
+    {
+      "tree_initialization_ms": 11.188100000000304,
+      "insert_ms": 11.929399999999987,
+      "proof_generation_ms": 0.04729999999926804,
+      "proof_verify_ms": 11.283100000000559,
+      "remove_ms": 11.195400000000518
+    },
+    {
+      "tree_initialization_ms": 11.503499999999804,
+      "insert_ms": 11.566399999999703,
+      "proof_generation_ms": 0.0466999999998734,
+      "proof_verify_ms": 11.479100000000471,
+      "remove_ms": 11.014600000000428
+    },
+    {
+      "tree_initialization_ms": 12.293499999999767,
+      "insert_ms": 12.153200000000652,
+      "proof_generation_ms": 0.051599999999780266,
+      "proof_verify_ms": 11.435699999999997,
+      "remove_ms": 11.050799999999981
+    },
+    {
+      "tree_initialization_ms": 11.199000000000524,
+      "insert_ms": 12.21519999999964,
+      "proof_generation_ms": 0.0452000000004773,
+      "proof_verify_ms": 11.238299999999981,
+      "remove_ms": 10.988599999999678
+    },
+    {
+      "tree_initialization_ms": 11.188500000000204,
+      "insert_ms": 12.056899999999587,
+      "proof_generation_ms": 0.04349999999976717,
+      "proof_verify_ms": 11.277999999999338,
+      "remove_ms": 10.985099999999875
+    },
+    {
+      "tree_initialization_ms": 11.90940000000046,
+      "insert_ms": 11.60280000000057,
+      "proof_generation_ms": 0.04260000000067521,
+      "proof_verify_ms": 11.267300000000432,
+      "remove_ms": 11.001600000000508
+    },
+    {
+      "tree_initialization_ms": 11.246499999999287,
+      "insert_ms": 11.56880000000001,
+      "proof_generation_ms": 0.04730000000017753,
+      "proof_verify_ms": 11.46600000000035,
+      "remove_ms": 11.504500000000007
+    }
+  ]
+}

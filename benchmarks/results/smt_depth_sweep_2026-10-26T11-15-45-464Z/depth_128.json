@@ -1,0 +1,424 @@
+{
+  "benchmark": "SMT depth=128",
+  "created_at": "2026-10-26T11:15:55.520Z",
+  "warmup_runs": 5,
+  "measured_runs": 50,
+  "environment": {
+    "platform": "win32",
+    "arch": "x64",
+    "node": "v26.1.0",
+    "cpu_model": "12th Gen Intel(R) Core(TM) i7-12650H",
+    "cpu_logical_cores": 16,
+    "memory_total_bytes": 16782184448
+  },
+  "metadata": {
+    "depth": 128,
+    "capacity": "340282366920938463463374607431768211456",
+    "poseidon_setup_ms_one_time": 279.8527,
+    "measurement_scope": "Shared Poseidon setup excluded from all samples."
+  },
+  "summary": {
+    "tree_initialization_ms": {
+      "n": 50,
+      "mean_ms": 23.670545999999977,
+      "median_ms": 23.430349999999635,
+      "stddev_ms": 1.1442949657572037,
+      "min_ms": 22.3762999999999,
+      "max_ms": 28.66530000000057,
+      "p95_ms": 26.10909999999967,
+      "cv_percent": 4.834256741509912
+    },
+    "insert_ms": {
+      "n": 50,
+      "mean_ms": 23.45604799999994,
+      "median_ms": 23.413699999999608,
+      "stddev_ms": 0.7960089132000407,
+      "min_ms": 22.134099999999307,
+      "max_ms": 26.356799999999566,
+      "p95_ms": 24.605499999999665,
+      "cv_percent": 3.3936190495519227
+    },
+    "proof_generation_ms": {
+      "n": 50,
+      "mean_ms": 0.08406199999999445,
+      "median_ms": 0.08129999999982829,
+      "stddev_ms": 0.014806588301736097,
+      "min_ms": 0.07309999999961292,
+      "max_ms": 0.17559999999866704,
+      "p95_ms": 0.0999999999994543,
+      "cv_percent": 17.61389010698898
+    },
+    "proof_verify_ms": {
+      "n": 50,
+      "mean_ms": 22.370131999999813,
+      "median_ms": 22.21115000000009,
+      "stddev_ms": 0.412928625270091,
+      "min_ms": 21.946199999999408,
+      "max_ms": 23.597200000000157,
+      "p95_ms": 23.35820000000058,
+      "cv_percent": 1.8458926629046912
+    },
+    "remove_ms": {
+      "n": 50,
+      "mean_ms": 22.385795999999957,
+      "median_ms": 22.190349999999853,
+      "stddev_ms": 0.42259106829650356,
+      "min_ms": 22.01640000000043,
+      "max_ms": 23.98819999999978,
+      "p95_ms": 23.266499999999724,
+      "cv_percent": 1.8877643140163718
+    }
+  },
+  "samples": [
+    {
+      "tree_initialization_ms": 22.717800000000352,
+      "insert_ms": 23.67290000000048,
+      "proof_generation_ms": 0.0896999999995387,
+      "proof_verify_ms": 22.086699999999837,
+      "remove_ms": 22.21889999999985
+    },
+    {
+      "tree_initialization_ms": 23.900400000000445,
+      "insert_ms": 22.389799999999923,
+      "proof_generation_ms": 0.07439999999951397,
+      "proof_verify_ms": 22.094600000000355,
+      "remove_ms": 22.20980000000054
+    },
+    {
+      "tree_initialization_ms": 23.5012999999999,
+      "insert_ms": 23.0588000000007,
+      "proof_generation_ms": 0.0771999999997206,
+      "proof_verify_ms": 22.574400000000423,
+      "remove_ms": 22.812700000000405
+    },
+    {
+      "tree_initialization_ms": 24.374799999999595,
+      "insert_ms": 22.452400000000125,
+      "proof_generation_ms": 0.0808999999999287,
+      "proof_verify_ms": 22.14930000000004,
+      "remove_ms": 22.123000000000502
+    },
+    {
+      "tree_initialization_ms": 23.50750000000062,
+      "insert_ms": 22.775400000000445,
+      "proof_generation_ms": 0.07630000000062864,
+      "proof_verify_ms": 22.047700000000077,
+      "remove_ms": 22.157499999999345
+    },
+    {
+      "tree_initialization_ms": 23.599299999999857,
+      "insert_ms": 22.98489999999947,
+      "proof_generation_ms": 0.08899999999994179,
+      "proof_verify_ms": 22.162199999999757,
+      "remove_ms": 22.442599999999402
+    },
+    {
+      "tree_initialization_ms": 23.311399999999594,
+      "insert_ms": 22.269100000000435,
+      "proof_generation_ms": 0.07409999999981665,
+      "proof_verify_ms": 22.16440000000057,
+      "remove_ms": 22.63420000000042
+    },
+    {
+      "tree_initialization_ms": 23.392700000000332,
+      "insert_ms": 23.705299999999625,
+      "proof_generation_ms": 0.07769999999982247,
+      "proof_verify_ms": 22.01639999999952,
+      "remove_ms": 22.14509999999973
+    },
+    {
+      "tree_initialization_ms": 22.881900000000314,
+      "insert_ms": 23.18119999999999,
+      "proof_generation_ms": 0.0793999999996231,
+      "proof_verify_ms": 22.446899999999914,
+      "remove_ms": 22.906300000000556
+    },
+    {
+      "tree_initialization_ms": 23.499799999999595,
+      "insert_ms": 24.35149999999976,
+      "proof_generation_ms": 0.08939999999984138,
+      "proof_verify_ms": 22.24579999999969,
+      "remove_ms": 22.137900000000627
+    },
+    {
+      "tree_initialization_ms": 24.50540000000001,
+      "insert_ms": 22.91280000000006,
+      "proof_generation_ms": 0.07510000000002037,
+      "proof_verify_ms": 21.946199999999408,
+      "remove_ms": 22.747999999999593
+    },
+    {
+      "tree_initialization_ms": 22.700399999999718,
+      "insert_ms": 24.402600000000348,
+      "proof_generation_ms": 0.08439999999973224,
+      "proof_verify_ms": 22.71939999999995,
+      "remove_ms": 22.88130000000001
+    },
+    {
+      "tree_initialization_ms": 26.309300000000803,
+      "insert_ms": 23.78389999999945,
+      "proof_generation_ms": 0.07309999999961292,
+      "proof_verify_ms": 22.246100000000297,
+      "remove_ms": 22.050900000000183
+    },
+    {
+      "tree_initialization_ms": 23.87039999999979,
+      "insert_ms": 22.943300000000818,
+      "proof_generation_ms": 0.08479999999963184,
+      "proof_verify_ms": 22.78809999999976,
+      "remove_ms": 22.118399999999383
+    },
+    {
+      "tree_initialization_ms": 22.66060000000016,
+      "insert_ms": 23.482299999999668,
+      "proof_generation_ms": 0.08399999999983265,
+      "proof_verify_ms": 22.07169999999951,
+      "remove_ms": 22.183499999999185
+    },
+    {
+      "tree_initialization_ms": 28.66530000000057,
+      "insert_ms": 25.89810000000034,
+      "proof_generation_ms": 0.0999999999994543,
+      "proof_verify_ms": 22.19880000000012,
+      "remove_ms": 22.337999999999738
+    },
+    {
+      "tree_initialization_ms": 22.588400000000547,
+      "insert_ms": 24.605499999999665,
+      "proof_generation_ms": 0.08010000000012951,
+      "proof_verify_ms": 22.21229999999923,
+      "remove_ms": 22.344200000000455
+    },
+    {
+      "tree_initialization_ms": 23.60480000000007,
+      "insert_ms": 23.616500000000087,
+      "proof_generation_ms": 0.0742999999993117,
+      "proof_verify_ms": 22.226599999999962,
+      "remove_ms": 22.099999999999454
+    },
+    {
+      "tree_initialization_ms": 23.155399999999645,
+      "insert_ms": 23.168300000000272,
+      "proof_generation_ms": 0.08669999999983702,
+      "proof_verify_ms": 22.465400000000045,
+      "remove_ms": 22.569000000000415
+    },
+    {
+      "tree_initialization_ms": 23.780499999999847,
+      "insert_ms": 23.799799999999777,
+      "proof_generation_ms": 0.08340000000043801,
+      "proof_verify_ms": 22.027200000000448,
+      "remove_ms": 22.215299999999843
+    },
+    {
+      "tree_initialization_ms": 23.7549999999992,
+      "insert_ms": 22.422599999999875,
+      "proof_generation_ms": 0.07850000000053114,
+      "proof_verify_ms": 22.03940000000057,
+      "remove_ms": 22.113400000000183
+    },
+    {
+      "tree_initialization_ms": 22.767300000000432,
+      "insert_ms": 23.590500000000247,
+      "proof_generation_ms": 0.09110000000055152,
+      "proof_verify_ms": 22.691100000000006,
+      "remove_ms": 22.160799999999654
+    },
+    {
+      "tree_initialization_ms": 22.954000000000633,
+      "insert_ms": 23.397799999999734,
+      "proof_generation_ms": 0.07629999999971915,
+      "proof_verify_ms": 22.316200000000208,
+      "remove_ms": 22.319499999999607
+    },
+    {
+      "tree_initialization_ms": 24.50999999999931,
+      "insert_ms": 23.17069999999967,
+      "proof_generation_ms": 0.08159999999952561,
+      "proof_verify_ms": 22.13919999999962,
+      "remove_ms": 22.148699999999735
+    },
+    {
+      "tree_initialization_ms": 22.836500000000342,
+      "insert_ms": 23.632799999999406,
+      "proof_generation_ms": 0.1069999999999709,
+      "proof_verify_ms": 22.942200000000412,
+      "remove_ms": 22.02810000000045
+    },
+    {
+      "tree_initialization_ms": 23.27759999999944,
+      "insert_ms": 23.645700000000033,
+      "proof_generation_ms": 0.09230000000025029,
+      "proof_verify_ms": 23.087999999999738,
+      "remove_ms": 22.095399999999245
+    },
+    {
+      "tree_initialization_ms": 26.10909999999967,
+      "insert_ms": 23.562700000000405,
+      "proof_generation_ms": 0.08920000000034634,
+      "proof_verify_ms": 23.54649999999947,
+      "remove_ms": 23.98819999999978
+    },
+    {
+      "tree_initialization_ms": 24.931099999999788,
+      "insert_ms": 23.089500000000044,
+      "proof_generation_ms": 0.07849999999962165,
+      "proof_verify_ms": 22.07170000000042,
+      "remove_ms": 22.134399999999005
+    },
+    {
+      "tree_initialization_ms": 22.3762999999999,
+      "insert_ms": 23.27889999999934,
+      "proof_generation_ms": 0.17559999999866704,
+      "proof_verify_ms": 22.940499999998792,
+      "remove_ms": 22.990399999998772
+    },
+    {
+      "tree_initialization_ms": 23.952900000000227,
+      "insert_ms": 23.29899999999907,
+      "proof_generation_ms": 0.08330000000023574,
+      "proof_verify_ms": 23.35820000000058,
+      "remove_ms": 22.03570000000036
+    },
+    {
+      "tree_initialization_ms": 23.13249999999971,
+      "insert_ms": 22.134099999999307,
+      "proof_generation_ms": 0.07949999999982538,
+      "proof_verify_ms": 22.01299999999901,
+      "remove_ms": 22.65480000000025
+    },
+    {
+      "tree_initialization_ms": 23.290600000000268,
+      "insert_ms": 24.2437000000009,
+      "proof_generation_ms": 0.07840000000032887,
+      "proof_verify_ms": 22.23649999999907,
+      "remove_ms": 22.17950000000019
+    },
+    {
+      "tree_initialization_ms": 24.82630000000063,
+      "insert_ms": 23.27100000000064,
+      "proof_generation_ms": 0.08240000000114378,
+      "proof_verify_ms": 23.10870000000068,
+      "remove_ms": 22.01640000000043
+    },
+    {
+      "tree_initialization_ms": 22.65810000000056,
+      "insert_ms": 24,
+      "proof_generation_ms": 0.0768000000007305,
+      "proof_verify_ms": 22.11160000000018,
+      "remove_ms": 22.10660000000098
+    },
+    {
+      "tree_initialization_ms": 23.44419999999991,
+      "insert_ms": 23.570599999999104,
+      "proof_generation_ms": 0.08549999999922875,
+      "proof_verify_ms": 22.210000000000946,
+      "remove_ms": 22.042999999999665
+    },
+    {
+      "tree_initialization_ms": 23.270000000000437,
+      "insert_ms": 23.459399999999732,
+      "proof_generation_ms": 0.08389999999963038,
+      "proof_verify_ms": 22.19750000000022,
+      "remove_ms": 22.19720000000052
+    },
+    {
+      "tree_initialization_ms": 24.055700000000797,
+      "insert_ms": 22.972999999999956,
+      "proof_generation_ms": 0.0771999999997206,
+      "proof_verify_ms": 22.29689999999937,
+      "remove_ms": 22.95889999999963
+    },
+    {
+      "tree_initialization_ms": 23.41649999999936,
+      "insert_ms": 22.908900000000358,
+      "proof_generation_ms": 0.08220000000073924,
+      "proof_verify_ms": 22.065199999999095,
+      "remove_ms": 22.528699999998935
+    },
+    {
+      "tree_initialization_ms": 22.98489999999947,
+      "insert_ms": 22.770300000000134,
+      "proof_generation_ms": 0.07560000000012224,
+      "proof_verify_ms": 22.063599999999497,
+      "remove_ms": 22.504499999999098
+    },
+    {
+      "tree_initialization_ms": 23.74319999999898,
+      "insert_ms": 23.718800000000556,
+      "proof_generation_ms": 0.0797999999995227,
+      "proof_verify_ms": 22.114799999999377,
+      "remove_ms": 22.07390000000123
+    },
+    {
+      "tree_initialization_ms": 22.679700000000594,
+      "insert_ms": 23.272499999999127,
+      "proof_generation_ms": 0.09000000000014552,
+      "proof_verify_ms": 23.597200000000157,
+      "remove_ms": 22.16070000000036
+    },
+    {
+      "tree_initialization_ms": 23.362299999998868,
+      "insert_ms": 23.326600000000326,
+      "proof_generation_ms": 0.08590000000003783,
+      "proof_verify_ms": 22.256099999998696,
+      "remove_ms": 22.051300000000992
+    },
+    {
+      "tree_initialization_ms": 25.540600000000268,
+      "insert_ms": 24.376800000000003,
+      "proof_generation_ms": 0.07320000000072469,
+      "proof_verify_ms": 22.459399999999732,
+      "remove_ms": 22.910899999998946
+    },
+    {
+      "tree_initialization_ms": 23.07669999999962,
+      "insert_ms": 26.356799999999566,
+      "proof_generation_ms": 0.08100000000013097,
+      "proof_verify_ms": 22.044099999999162,
+      "remove_ms": 22.271200000001045
+    },
+    {
+      "tree_initialization_ms": 23.45139999999992,
+      "insert_ms": 23.429599999999482,
+      "proof_generation_ms": 0.07810000000063155,
+      "proof_verify_ms": 21.996099999998478,
+      "remove_ms": 22.08640000000014
+    },
+    {
+      "tree_initialization_ms": 22.76800000000003,
+      "insert_ms": 23.886599999999817,
+      "proof_generation_ms": 0.08289999999942665,
+      "proof_verify_ms": 22.54150000000118,
+      "remove_ms": 23.266499999999724
+    },
+    {
+      "tree_initialization_ms": 22.51839999999902,
+      "insert_ms": 23.74409999999989,
+      "proof_generation_ms": 0.08460000000013679,
+      "proof_verify_ms": 22.08979999999974,
+      "remove_ms": 22.107099999999264
+    },
+    {
+      "tree_initialization_ms": 22.539099999999962,
+      "insert_ms": 23.57879999999932,
+      "proof_generation_ms": 0.08239999999932479,
+      "proof_verify_ms": 22.32469999999921,
+      "remove_ms": 22.257900000000518
+    },
+    {
+      "tree_initialization_ms": 23.92280000000028,
+      "insert_ms": 22.18949999999859,
+      "proof_generation_ms": 0.07620000000133587,
+      "proof_verify_ms": 22.65259999999944,
+      "remove_ms": 23.48869999999988
+    },
+    {
+      "tree_initialization_ms": 24.849099999999453,
+      "insert_ms": 23.046700000000783,
+      "proof_generation_ms": 0.080100000001039,
+      "proof_verify_ms": 22.104099999998652,
+      "remove_ms": 22.074399999999514
+    }
+  ]
+}

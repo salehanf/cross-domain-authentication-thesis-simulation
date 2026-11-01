@@ -1,0 +1,10 @@
+{
+  "D_id": 12345,
+  "scheme_id": 42,
+  "purpose": "enroll",
+  "nonce": "b36da4492b015befff9cca67d5a56d554f3173066c9ebede9ceac5ac93e04ed2",
+  "issued_at": "2026-10-25T15:17:56.906Z",
+  "expires_at": "2026-10-25T15:27:56.906Z",
+  "key_id": "6bcf2291377749af4aaafa97bfa0b78af233cd52a5d0c82692a6e488e20a4643",
+  "signature": "e1054bc2d2ec57b293f8796cecc31dbff96ff5705675166c07efcf7ccf1399a3d297e96d5df5ebeeeb374c99d039d956cf430aa682e52c48fe40fe05586dc204"
+}

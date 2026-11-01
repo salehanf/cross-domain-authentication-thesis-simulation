@@ -1,0 +1,241 @@
+{
+  "benchmark": "Revocation end-to-end (Phase 7, source=pvss)",
+  "created_at": "2026-10-26T23:01:51.604Z",
+  "warmup_runs": 1,
+  "measured_runs": 2,
+  "environment": {
+    "platform": "win32",
+    "arch": "x64",
+    "node": "v26.1.0",
+    "cpu_model": "12th Gen Intel(R) Core(TM) i7-12650H",
+    "cpu_logical_cores": 16,
+    "memory_total_bytes": 16782184448
+  },
+  "metadata": {
+    "thesis_phase": 7,
+    "phase_name": "Revocation",
+    "enrollment_id": "33cc8699fd889aa9",
+    "admins_n": 5,
+    "threshold_t": 3,
+    "participating_admins": [
+      1,
+      2,
+      3
+    ],
+    "share_source": "pvss",
+    "organizational_decision_included": false,
+    "state_reset": "BAS registry and SignedRoot directory are restored after each sample.",
+    "measurement_boundary": "Timer starts at threshold reconstruction and ends after BAS accepts revocation and persists/verifies the new SignedRoot.",
+    "includes": [
+      "threshold reconstruction",
+      "derive non-identity revocation y_hash",
+      "Revoke_Message creation and FROST sign/verify",
+      "current SignedRoot validation",
+      "SMT reconstruction",
+      "target leaf removal",
+      "BAS active->revoked transition",
+      "new SignedRoot FROST signing and verification",
+      "state commit and post-commit checks"
+    ]
+  },
+  "summary": {
+    "threshold_reconstruction_wall_ms": {
+      "n": 2,
+      "mean_ms": 803.3071,
+      "median_ms": 803.3071,
+      "stddev_ms": 13.519457392217785,
+      "min_ms": 793.7474000000002,
+      "max_ms": 812.8667999999998,
+      "p95_ms": 812.8667999999998,
+      "cv_percent": 1.6829749658901043
+    },
+    "reconstruction_share_acquisition_internal_ms": {
+      "n": 2,
+      "mean_ms": 89.76650000000001,
+      "median_ms": 89.76650000000001,
+      "stddev_ms": 0.39032294321497896,
+      "min_ms": 89.4905,
+      "max_ms": 90.0425,
+      "p95_ms": 90.0425,
+      "cv_percent": 0.43482027617761515
+    },
+    "reconstruction_lagrange_internal_ms": {
+      "n": 2,
+      "mean_ms": 0.5936,
+      "median_ms": 0.5936,
+      "stddev_ms": 0.13576450198781712,
+      "min_ms": 0.4976,
+      "max_ms": 0.6896,
+      "p95_ms": 0.6896,
+      "cv_percent": 22.87137836721986
+    },
+    "reconstruction_derive_y_hash_internal_ms": {
+      "n": 2,
+      "mean_ms": 13.8726,
+      "median_ms": 13.8726,
+      "stddev_ms": 0.02687005768508899,
+      "min_ms": 13.8536,
+      "max_ms": 13.8916,
+      "p95_ms": 13.8916,
+      "cv_percent": 0.1936915768139281
+    },
+    "revoke_message_wall_ms": {
+      "n": 2,
+      "mean_ms": 116.33235000000036,
+      "median_ms": 116.33235000000036,
+      "stddev_ms": 5.282016944785107,
+      "min_ms": 112.59740000000056,
+      "max_ms": 120.06730000000016,
+      "p95_ms": 120.06730000000016,
+      "cv_percent": 4.5404540910461195
+    },
+    "revoke_message_frost_sign_internal_ms": {
+      "n": 2,
+      "mean_ms": 33.698949999999996,
+      "median_ms": 33.698949999999996,
+      "stddev_ms": 1.9586150732086178,
+      "min_ms": 32.314,
+      "max_ms": 35.0839,
+      "p95_ms": 35.0839,
+      "cv_percent": 5.812095252845023
+    },
+    "revoke_message_frost_verify_internal_ms": {
+      "n": 2,
+      "mean_ms": 23.98535,
+      "median_ms": 23.98535,
+      "stddev_ms": 0.9642815175040959,
+      "min_ms": 23.3035,
+      "max_ms": 24.6672,
+      "p95_ms": 24.6672,
+      "cv_percent": 4.020293710552883
+    },
+    "bas_revocation_wall_ms": {
+      "n": 2,
+      "mean_ms": 695.5270000000003,
+      "median_ms": 695.5270000000003,
+      "stddev_ms": 4.254520081043775,
+      "min_ms": 692.5185999999999,
+      "max_ms": 698.5354000000007,
+      "p95_ms": 698.5354000000007,
+      "cv_percent": 0.6116973289381682
+    },
+    "bas_revoke_signature_verify_internal_ms": {
+      "n": 2,
+      "mean_ms": 11.0369,
+      "median_ms": 11.0369,
+      "stddev_ms": 0.5588971998498472,
+      "min_ms": 10.6417,
+      "max_ms": 11.4321,
+      "p95_ms": 11.4321,
+      "cv_percent": 5.063896563798234
+    },
+    "bas_smt_reconstruction_internal_ms": {
+      "n": 2,
+      "mean_ms": 290.775,
+      "median_ms": 290.775,
+      "stddev_ms": 2.606395595453599,
+      "min_ms": 288.932,
+      "max_ms": 292.618,
+      "p95_ms": 292.618,
+      "cv_percent": 0.8963616526364367
+    },
+    "bas_smt_remove_internal_ms": {
+      "n": 2,
+      "mean_ms": 4.0053,
+      "median_ms": 4.0053,
+      "stddev_ms": 0.1712612624033821,
+      "min_ms": 3.8842,
+      "max_ms": 4.1264,
+      "p95_ms": 4.1264,
+      "cv_percent": 4.275866037584752
+    },
+    "bas_new_root_frost_sign_internal_ms": {
+      "n": 2,
+      "mean_ms": 32.58985,
+      "median_ms": 32.58985,
+      "stddev_ms": 4.690451411644728,
+      "min_ms": 29.2732,
+      "max_ms": 35.9065,
+      "p95_ms": 35.9065,
+      "cv_percent": 14.392368825400325
+    },
+    "bas_new_root_verify_internal_ms": {
+      "n": 2,
+      "mean_ms": 20.3647,
+      "median_ms": 20.3647,
+      "stddev_ms": 2.301915415474688,
+      "min_ms": 18.737,
+      "max_ms": 21.9924,
+      "p95_ms": 21.9924,
+      "cv_percent": 11.303458511417737
+    },
+    "bas_state_commit_internal_ms": {
+      "n": 2,
+      "mean_ms": 4.3915,
+      "median_ms": 4.3915,
+      "stddev_ms": 1.0736709365536536,
+      "min_ms": 3.6323,
+      "max_ms": 5.1507,
+      "p95_ms": 5.1507,
+      "cv_percent": 24.448842913666258
+    },
+    "bas_revocation_internal_total_ms": {
+      "n": 2,
+      "mean_ms": 397.563,
+      "median_ms": 397.563,
+      "stddev_ms": 6.618660893262336,
+      "min_ms": 392.8829,
+      "max_ms": 402.2431,
+      "p95_ms": 402.2431,
+      "cv_percent": 1.6648080664604947
+    },
+    "revocation_e2e_wall_ms": {
+      "n": 2,
+      "mean_ms": 1617.5726,
+      "median_ms": 1617.5726,
+      "stddev_ms": 12.483687379136073,
+      "min_ms": 1608.7452999999998,
+      "max_ms": 1626.3999,
+      "p95_ms": 1626.3999,
+      "cv_percent": 0.7717543793172605
+    }
+  },
+  "samples": [
+    {
+      "threshold_reconstruction_wall_ms": 793.7474000000002,
+      "reconstruction_share_acquisition_internal_ms": 90.0425,
+      "reconstruction_lagrange_internal_ms": 0.4976,
+      "reconstruction_derive_y_hash_internal_ms": 13.8536,
+      "revoke_message_wall_ms": 120.06730000000016,
+      "revoke_message_frost_sign_internal_ms": 35.0839,
+      "revoke_message_frost_verify_internal_ms": 24.6672,
+      "bas_revocation_wall_ms": 692.5185999999999,
+      "bas_revoke_signature_verify_internal_ms": 11.4321,
+      "bas_smt_reconstruction_internal_ms": 288.932,
+      "bas_smt_remove_internal_ms": 3.8842,
+      "bas_new_root_frost_sign_internal_ms": 35.9065,
+      "bas_new_root_verify_internal_ms": 21.9924,
+      "bas_state_commit_internal_ms": 5.1507,
+      "bas_revocation_internal_total_ms": 402.2431,
+      "revocation_e2e_wall_ms": 1608.7452999999998
+    },
+    {
+      "threshold_reconstruction_wall_ms": 812.8667999999998,
+      "reconstruction_share_acquisition_internal_ms": 89.4905,
+      "reconstruction_lagrange_internal_ms": 0.6896,
+      "reconstruction_derive_y_hash_internal_ms": 13.8916,
+      "revoke_message_wall_ms": 112.59740000000056,
+      "revoke_message_frost_sign_internal_ms": 32.314,
+      "revoke_message_frost_verify_internal_ms": 23.3035,
+      "bas_revocation_wall_ms": 698.5354000000007,
+      "bas_revoke_signature_verify_internal_ms": 10.6417,
+      "bas_smt_reconstruction_internal_ms": 292.618,
+      "bas_smt_remove_internal_ms": 4.1264,
+      "bas_new_root_frost_sign_internal_ms": 29.2732,
+      "bas_new_root_verify_internal_ms": 18.737,
+      "bas_state_commit_internal_ms": 3.6323,
+      "bas_revocation_internal_total_ms": 392.8829,
+      "revocation_e2e_wall_ms": 1626.3999
+    }
+  ]
+}

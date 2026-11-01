@@ -1,0 +1,309 @@
+{
+  "benchmark": "AAT issuance end-to-end (Phase 3)",
+  "created_at": "2026-10-26T22:58:21.236Z",
+  "warmup_runs": 5,
+  "measured_runs": 50,
+  "environment": {
+    "platform": "win32",
+    "arch": "x64",
+    "node": "v26.1.0",
+    "cpu_model": "12th Gen Intel(R) Core(TM) i7-12650H",
+    "cpu_logical_cores": 16,
+    "memory_total_bytes": 16782184448
+  },
+  "metadata": {
+    "thesis_phase": 3,
+    "phase_name": "Admin Approval Token issuance",
+    "admins_n": 5,
+    "threshold_t": 3,
+    "threshold_signature": "FROST",
+    "includes_process_startup": true,
+    "includes_artifact_serialization": true,
+    "internal_frost_timing_reported_separately": true,
+    "persistent_state_change": false
+  },
+  "summary": {
+    "aat_issue_wall_ms": {
+      "n": 50,
+      "mean_ms": 129.7239399999999,
+      "median_ms": 125.54780000000005,
+      "stddev_ms": 14.531041553705348,
+      "min_ms": 105.24619999999959,
+      "max_ms": 158.65560000000005,
+      "p95_ms": 157.15470000000005,
+      "cv_percent": 11.201511111754204
+    },
+    "aat_frost_internal_ms": {
+      "n": 50,
+      "mean_ms": 1.8943320000000003,
+      "median_ms": 1.7829000000000002,
+      "stddev_ms": 0.29791221172331545,
+      "min_ms": 1.5532,
+      "max_ms": 2.5956,
+      "p95_ms": 2.4505999999999997,
+      "cv_percent": 15.726504737464994
+    },
+    "aat_signature_bytes": {
+      "n": 50,
+      "mean_ms": 64,
+      "median_ms": 64,
+      "stddev_ms": 0,
+      "min_ms": 64,
+      "max_ms": 64,
+      "p95_ms": 64,
+      "cv_percent": 0
+    }
+  },
+  "samples": [
+    {
+      "aat_issue_wall_ms": 126.90739999999994,
+      "aat_frost_internal_ms": 1.7838,
+      "aat_signature_bytes": 64
+    },
+    {
+      "aat_issue_wall_ms": 126.85479999999995,
+      "aat_frost_internal_ms": 2.1048,
+      "aat_signature_bytes": 64
+    },
+    {
+      "aat_issue_wall_ms": 120.96439999999996,
+      "aat_frost_internal_ms": 2.5546,
+      "aat_signature_bytes": 64
+    },
+    {
+      "aat_issue_wall_ms": 125.48520000000008,
+      "aat_frost_internal_ms": 1.9472,
+      "aat_signature_bytes": 64
+    },
+    {
+      "aat_issue_wall_ms": 112.91959999999995,
+      "aat_frost_internal_ms": 1.684,
+      "aat_signature_bytes": 64
+    },
+    {
+      "aat_issue_wall_ms": 124.90120000000002,
+      "aat_frost_internal_ms": 2.2441,
+      "aat_signature_bytes": 64
+    },
+    {
+      "aat_issue_wall_ms": 138.9215999999999,
+      "aat_frost_internal_ms": 1.6171,
+      "aat_signature_bytes": 64
+    },
+    {
+      "aat_issue_wall_ms": 140.32259999999997,
+      "aat_frost_internal_ms": 2.5956,
+      "aat_signature_bytes": 64
+    },
+    {
+      "aat_issue_wall_ms": 125.12750000000005,
+      "aat_frost_internal_ms": 2.0097,
+      "aat_signature_bytes": 64
+    },
+    {
+      "aat_issue_wall_ms": 119.76089999999999,
+      "aat_frost_internal_ms": 1.7322,
+      "aat_signature_bytes": 64
+    },
+    {
+      "aat_issue_wall_ms": 123.29509999999982,
+      "aat_frost_internal_ms": 1.6169,
+      "aat_signature_bytes": 64
+    },
+    {
+      "aat_issue_wall_ms": 143.43579999999974,
+      "aat_frost_internal_ms": 1.7615,
+      "aat_signature_bytes": 64
+    },
+    {
+      "aat_issue_wall_ms": 132.29040000000032,
+      "aat_frost_internal_ms": 1.879,
+      "aat_signature_bytes": 64
+    },
+    {
+      "aat_issue_wall_ms": 111.08899999999994,
+      "aat_frost_internal_ms": 1.6627,
+      "aat_signature_bytes": 64
+    },
+    {
+      "aat_issue_wall_ms": 142.8487,
+      "aat_frost_internal_ms": 2.4396,
+      "aat_signature_bytes": 64
+    },
+    {
+      "aat_issue_wall_ms": 117.5338999999999,
+      "aat_frost_internal_ms": 1.8512,
+      "aat_signature_bytes": 64
+    },
+    {
+      "aat_issue_wall_ms": 116.27189999999973,
+      "aat_frost_internal_ms": 1.7196,
+      "aat_signature_bytes": 64
+    },
+    {
+      "aat_issue_wall_ms": 122.02980000000025,
+      "aat_frost_internal_ms": 1.6987,
+      "aat_signature_bytes": 64
+    },
+    {
+      "aat_issue_wall_ms": 125.61040000000003,
+      "aat_frost_internal_ms": 1.7525,
+      "aat_signature_bytes": 64
+    },
+    {
+      "aat_issue_wall_ms": 111.17039999999997,
+      "aat_frost_internal_ms": 1.9842000000000002,
+      "aat_signature_bytes": 64
+    },
+    {
+      "aat_issue_wall_ms": 153.52779999999984,
+      "aat_frost_internal_ms": 2.4505999999999997,
+      "aat_signature_bytes": 64
+    },
+    {
+      "aat_issue_wall_ms": 141.17290000000003,
+      "aat_frost_internal_ms": 1.7863,
+      "aat_signature_bytes": 64
+    },
+    {
+      "aat_issue_wall_ms": 156.89240000000018,
+      "aat_frost_internal_ms": 2.4241,
+      "aat_signature_bytes": 64
+    },
+    {
+      "aat_issue_wall_ms": 145.39199999999983,
+      "aat_frost_internal_ms": 1.9629,
+      "aat_signature_bytes": 64
+    },
+    {
+      "aat_issue_wall_ms": 148.39390000000003,
+      "aat_frost_internal_ms": 1.7087,
+      "aat_signature_bytes": 64
+    },
+    {
+      "aat_issue_wall_ms": 122.80379999999968,
+      "aat_frost_internal_ms": 1.7128,
+      "aat_signature_bytes": 64
+    },
+    {
+      "aat_issue_wall_ms": 156.61820000000034,
+      "aat_frost_internal_ms": 1.7512,
+      "aat_signature_bytes": 64
+    },
+    {
+      "aat_issue_wall_ms": 157.15470000000005,
+      "aat_frost_internal_ms": 2.4356999999999998,
+      "aat_signature_bytes": 64
+    },
+    {
+      "aat_issue_wall_ms": 147.1223,
+      "aat_frost_internal_ms": 2.1113,
+      "aat_signature_bytes": 64
+    },
+    {
+      "aat_issue_wall_ms": 132.14580000000024,
+      "aat_frost_internal_ms": 1.7323,
+      "aat_signature_bytes": 64
+    },
+    {
+      "aat_issue_wall_ms": 127.78709999999955,
+      "aat_frost_internal_ms": 1.7159,
+      "aat_signature_bytes": 64
+    },
+    {
+      "aat_issue_wall_ms": 123.90979999999945,
+      "aat_frost_internal_ms": 2.3204,
+      "aat_signature_bytes": 64
+    },
+    {
+      "aat_issue_wall_ms": 142.10210000000006,
+      "aat_frost_internal_ms": 1.9376,
+      "aat_signature_bytes": 64
+    },
+    {
+      "aat_issue_wall_ms": 129.8716999999997,
+      "aat_frost_internal_ms": 1.6454,
+      "aat_signature_bytes": 64
+    },
+    {
+      "aat_issue_wall_ms": 121.42050000000017,
+      "aat_frost_internal_ms": 1.8373,
+      "aat_signature_bytes": 64
+    },
+    {
+      "aat_issue_wall_ms": 158.65560000000005,
+      "aat_frost_internal_ms": 2.3365,
+      "aat_signature_bytes": 64
+    },
+    {
+      "aat_issue_wall_ms": 128.07200000000012,
+      "aat_frost_internal_ms": 1.6397,
+      "aat_signature_bytes": 64
+    },
+    {
+      "aat_issue_wall_ms": 118.38749999999982,
+      "aat_frost_internal_ms": 1.6644999999999999,
+      "aat_signature_bytes": 64
+    },
+    {
+      "aat_issue_wall_ms": 117.65389999999934,
+      "aat_frost_internal_ms": 1.7973,
+      "aat_signature_bytes": 64
+    },
+    {
+      "aat_issue_wall_ms": 121.12199999999939,
+      "aat_frost_internal_ms": 1.5532,
+      "aat_signature_bytes": 64
+    },
+    {
+      "aat_issue_wall_ms": 135.5574999999999,
+      "aat_frost_internal_ms": 1.5722,
+      "aat_signature_bytes": 64
+    },
+    {
+      "aat_issue_wall_ms": 125.24179999999978,
+      "aat_frost_internal_ms": 1.8622,
+      "aat_signature_bytes": 64
+    },
+    {
+      "aat_issue_wall_ms": 105.24619999999959,
+      "aat_frost_internal_ms": 1.557,
+      "aat_signature_bytes": 64
+    },
+    {
+      "aat_issue_wall_ms": 109.8697000000002,
+      "aat_frost_internal_ms": 1.6084,
+      "aat_signature_bytes": 64
+    },
+    {
+      "aat_issue_wall_ms": 122.02989999999954,
+      "aat_frost_internal_ms": 1.782,
+      "aat_signature_bytes": 64
+    },
+    {
+      "aat_issue_wall_ms": 113.3712000000005,
+      "aat_frost_internal_ms": 1.6005,
+      "aat_signature_bytes": 64
+    },
+    {
+      "aat_issue_wall_ms": 133.33559999999943,
+      "aat_frost_internal_ms": 1.8713,
+      "aat_signature_bytes": 64
+    },
+    {
+      "aat_issue_wall_ms": 107.96209999999974,
+      "aat_frost_internal_ms": 1.7149999999999999,
+      "aat_signature_bytes": 64
+    },
+    {
+      "aat_issue_wall_ms": 117.7471999999998,
+      "aat_frost_internal_ms": 1.6037,
+      "aat_signature_bytes": 64
+    },
+    {
+      "aat_issue_wall_ms": 157.88919999999962,
+      "aat_frost_internal_ms": 2.3816,
+      "aat_signature_bytes": 64
+    }
+  ]
+}
