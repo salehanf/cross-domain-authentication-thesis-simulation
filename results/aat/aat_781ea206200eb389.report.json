@@ -1,0 +1,26 @@
+{
+  "component": "Admin Approval Token issuance",
+  "D_id": 12345,
+  "scheme_id": 42,
+  "purpose": "enroll",
+  "key_id": "6bcf2291377749af4aaafa97bfa0b78af233cd52a5d0c82692a6e488e20a4643",
+  "validity_seconds": 600,
+  "nonce_bytes": 32,
+  "signature_bytes": 64,
+  "threshold": 3,
+  "administrators": 5,
+  "signers": [
+    1,
+    2,
+    3
+  ],
+  "signature_valid": true,
+  "frost_timing": {
+    "round1_ms": 0.5942000000000001,
+    "round2_ms": 0.45990000000000003,
+    "aggregate_ms": 0.21800000000000003,
+    "verify_ms": 0.1079,
+    "total_ms": 1.5832000000000002
+  },
+  "experimental_nullifier": "aa2768b852a75c279ebc13f2c9a5d7bfd87e306ca117936c6f80eb36dc5f19b3"
+}
