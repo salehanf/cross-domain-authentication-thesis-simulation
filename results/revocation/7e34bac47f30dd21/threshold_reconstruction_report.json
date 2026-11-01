@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "enrollment_id": "7e34bac47f30dd21",
+  "D_id": "12345",
+  "scheme_id": "42",
+  "threshold": {
+    "n": 5,
+    "t": 3
+  },
+  "participating_admins": [
+    1,
+    2,
+    3
+  ],
+  "pvss_encryption": "ECDH-Poseidon-field-mask",
+  "admin_results": [
+    {
+      "admin_id": 1,
+      "ciphertext_tag_valid": true,
+      "decrypted_share_matches_lab_witness": true
+    },
+    {
+      "admin_id": 2,
+      "ciphertext_tag_valid": true,
+      "decrypted_share_matches_lab_witness": true
+    },
+    {
+      "admin_id": 3,
+      "ciphertext_tag_valid": true,
+      "decrypted_share_matches_lab_witness": true
+    }
+  ],
+  "recovered_share_count": 3,
+  "threshold_reconstruction": "VALID",
+  "reconstructed_secret": "x_anchor",
+  "reconstructed_x_anchor_exposed": false,
+  "x_reconstructed": false,
+  "anchor_matches_enrollment_witness": true,
+  "y_hash": "10207681276453195396589050510384739362481576808007470129702073003684102955639",
+  "y_hash_matches_enrollment_witness": true,
+  "bas_record_found": true,
+  "bas_record_status": "active",
+  "revocation_target": "VALID_ACTIVE_RECORD",
+  "timings_ms": {
+    "decrypt_t_shares": 89.9733,
+    "lagrange_reconstruction": 0.643,
+    "derive_Y_and_y_hash": 15.5045
+  }
+}

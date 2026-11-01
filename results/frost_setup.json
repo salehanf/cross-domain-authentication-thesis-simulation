@@ -1,0 +1,47 @@
+{
+  "scheme": "FROST",
+  "ciphersuite": "FROST(Ed25519, SHA-512)",
+  "domain_id": 12345,
+  "scheme_id": 42,
+  "n": 5,
+  "t": 3,
+  "key_version": 1,
+  "key_id": "6bcf2291377749af4aaafa97bfa0b78af233cd52a5d0c82692a6e488e20a4643",
+  "group_public_key_hex": "9d026e578ea9082607a2a3fbd62d5e7d50cda663a66f1fb19388a6b433fe1642",
+  "admins": [
+    {
+      "admin_number": 1,
+      "identifier_hex": "0100000000000000000000000000000000000000000000000000000000000000",
+      "verifying_share_hex": "91127c2502cd92819e7164f716b5530ddfaa2aa3deaeaf62b53191bfc6e7353f"
+    },
+    {
+      "admin_number": 2,
+      "identifier_hex": "0200000000000000000000000000000000000000000000000000000000000000",
+      "verifying_share_hex": "398d38539fdf3d111be5a48ba7c1344b2f84e78e39fccf32b0461c2c796ed383"
+    },
+    {
+      "admin_number": 3,
+      "identifier_hex": "0300000000000000000000000000000000000000000000000000000000000000",
+      "verifying_share_hex": "6bb9bbbbbe3ada5f023088bcae78642a4d6c649416bd2adba309c61a492c9ec2"
+    },
+    {
+      "admin_number": 4,
+      "identifier_hex": "0400000000000000000000000000000000000000000000000000000000000000",
+      "verifying_share_hex": "3b0044b04e9f1a75a3df80ffa936b28d262a646b0a4e956e84535e2399385b5d"
+    },
+    {
+      "admin_number": 5,
+      "identifier_hex": "0500000000000000000000000000000000000000000000000000000000000000",
+      "verifying_share_hex": "63b7e3505f16e35dfbcef7b93f245dc8a97befa3081b8df71c43e2c2c2a75e5a"
+    }
+  ],
+  "self_test": true,
+  "timing": {
+    "dkg_round1_ms": 1.9448,
+    "dkg_round2_ms": 2.7206,
+    "dkg_round3_ms": 8.162700000000001,
+    "dkg_total_ms": 12.828600000000002,
+    "self_test_sign_ms": 3.9382999999999995
+  },
+  "note": "DKG communication is simulated locally in memory; timings measure local computation, not network latency."
+}

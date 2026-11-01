@@ -1,0 +1,26 @@
+{
+  "enrollment_id": "06a83bd85b983218",
+  "D_id": "12345",
+  "scheme_id": "42",
+  "y_hash": "10198669630022552417299370469755758266029687975198936576402876398757281301414",
+  "reason_code": "POLICY_REVOCATION",
+  "expected_root_version": 3,
+  "key_id": "6bcf2291377749af4aaafa97bfa0b78af233cd52a5d0c82692a6e488e20a4643",
+  "threshold": "3-of-5",
+  "signers": [
+    1,
+    2,
+    3
+  ],
+  "signing_statement": "SHA256(canonical([REVOKE,D_id,scheme_id,y_hash,reason_code,version,timestamp,key_id]))",
+  "frost_signature_valid": true,
+  "private_x_exposed": false,
+  "private_x_anchor_exposed": false,
+  "plaintext_shares_exposed": false,
+  "bas_record_active_before_revocation": true,
+  "revocation_applied": false,
+  "timings_ms": {
+    "frost_sign": 39.9571,
+    "frost_verify": 28.3706
+  }
+}

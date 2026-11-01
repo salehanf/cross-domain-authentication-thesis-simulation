@@ -1,0 +1,76 @@
+{
+  "experiment": {
+    "name": "MSc Thesis Cross-Domain Authentication",
+    "profile": "baseline",
+    "repetitions": 30,
+    "warmupRuns": 5
+  },
+  "environment": {
+    "platform": "win32",
+    "architecture": "x64",
+    "node": "v26.1.0",
+    "circom": "circom compiler 2.2.3",
+    "snarkjs": "0.7.6",
+    "circomlibjs": "0.1.7"
+  },
+  "cryptography": {
+    "proofSystem": "groth16",
+    "curve": "bn128",
+    "hash": "poseidon",
+    "babyjub": {
+      "base8": [
+        "5299619240641551281634865583518297030282874472190772894086521144482721001553",
+        "16950150798460657717958625567821834550301663161624707787222815936182638968203"
+      ],
+      "subgroupOrder": "2736030358979909402780800718157159386076813972158567259200215660948447373041"
+    }
+  },
+  "protocol": {
+    "schemeId": 42,
+    "domainId": 12345,
+    "domainTag": "13245343514578030741594369900290446682530842171781363792498777812991056803829",
+    "tags": {
+      "anchor": 1,
+      "leaf": 2,
+      "idx": 3,
+      "revoke": 4,
+      "node": 5,
+      "empty": 6
+    }
+  },
+  "administrators": {
+    "n": 5,
+    "t": 3
+  },
+  "state": {
+    "version": 0,
+    "smt": {
+      "depth": 20,
+      "capacity": "1048576",
+      "root": "4930738513896973287175333865974429784089330375743551446740194547782508420285",
+      "activeLeaves": 0,
+      "storedNonDefaultNodes": 0
+    },
+    "signedRoot": null,
+    "enrollmentCount": 0,
+    "revokedCount": 0
+  },
+  "zkArtifacts": {
+    "enrollmentLink": {
+      "circuit": "pending",
+      "provingKey": "pending",
+      "verificationKey": "pending"
+    },
+    "authentication": {
+      "circuit": "pending",
+      "provingKey": "pending",
+      "verificationKey": "pending"
+    }
+  },
+  "timing_ms": {
+    "poseidonInitialization": 285.02360000000044,
+    "babyjubInitialization": 126.30159999999887,
+    "smtInitialization": 6.024699999999939,
+    "totalSetup": 418.47999999999956
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "challenge_id": "df986b7c099a06db",
+  "service_id": "benchmark-service",
+  "D_id_src": "12345",
+  "curve": "BabyJubJub",
+  "generator": "Base8",
+  "signature_scheme": "Ed25519",
+  "kdf": "HKDF-SHA256",
+  "mac": "HMAC-SHA256",
+  "service_signature_valid": true,
+  "shared_secret_match": true,
+  "session_key_match": true,
+  "server_mac_valid": true,
+  "user_mac_valid": true,
+  "ephemeral_scalars_deleted": true,
+  "secure_session_status": "ESTABLISHED",
+  "timings_ms": {
+    "service_signature_verify_ms": 0.6634,
+    "user_dh_ms": 13.2543,
+    "service_dh_ms": 13.7786,
+    "transcript_ms": 0.0919,
+    "user_hkdf_ms": 0.4209,
+    "service_hkdf_ms": 0.0316,
+    "server_mac_generate_ms": 0.1725,
+    "user_mac_generate_ms": 0.0161,
+    "total_finalize_ms": 248.2223
+  }
+}

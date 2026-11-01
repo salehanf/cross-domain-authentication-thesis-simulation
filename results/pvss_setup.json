@@ -1,0 +1,42 @@
+{
+  "scheme_id": 42,
+  "domain_id": 12345,
+  "component": "PVSS admin encryption key setup",
+  "curve": "BabyJubJub",
+  "generator": "Base8",
+  "key_version": 1,
+  "n": 5,
+  "t": 3,
+  "generated_key_pairs": 5,
+  "all_self_tests_passed": true,
+  "timing": {
+    "total_ms": 442.47630000000004,
+    "per_admin": [
+      {
+        "admin_id": 1,
+        "key_generation_ms": 61.084700000000055
+      },
+      {
+        "admin_id": 2,
+        "key_generation_ms": 54.7401000000001
+      },
+      {
+        "admin_id": 3,
+        "key_generation_ms": 54.07839999999999
+      },
+      {
+        "admin_id": 4,
+        "key_generation_ms": 54.71529999999996
+      },
+      {
+        "admin_id": 5,
+        "key_generation_ms": 52.430099999999925
+      }
+    ]
+  },
+  "note": [
+    "No x_anchor or user share is generated during setup.",
+    "These key pairs are only for future PVSS share encryption/decryption during enrollment.",
+    "Private PVSS keys are distinct from FROST signing shares."
+  ]
+}

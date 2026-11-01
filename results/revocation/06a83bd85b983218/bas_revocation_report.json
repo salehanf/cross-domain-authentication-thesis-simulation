@@ -1,0 +1,44 @@
+{
+  "enrollment_id": "06a83bd85b983218",
+  "y_hash": "10198669630022552417299370469755758266029687975198936576402876398757281301414",
+  "reason_code": "POLICY_REVOCATION",
+  "D_id": "12345",
+  "scheme_id": "42",
+  "revoke_message": {
+    "expected_version": 3,
+    "key_id": "6bcf2291377749af4aaafa97bfa0b78af233cd52a5d0c82692a6e488e20a4643",
+    "threshold_signature_valid": true,
+    "timestamp_valid": true
+  },
+  "smt": {
+    "depth": 20,
+    "idx": "112273",
+    "old_root": "13253605644099079715091587263820317239526813874199533362029838746325241840180",
+    "new_root": "4930738513896973287175333865974429784089330375743551446740194547782508420285",
+    "root_changed": true,
+    "single_active_leaf_before": true,
+    "empty_root_after": true
+  },
+  "bas_registry": {
+    "old_status": "active",
+    "new_status": "revoked",
+    "old_version": 3,
+    "new_version": 4
+  },
+  "signed_root": {
+    "previous_version": 3,
+    "new_version": 4,
+    "prev_hash": "ba666bfb13d0b2bd498e3d28e1896e6afa50508390196713f0fcb10a9a559919",
+    "signature_valid": true
+  },
+  "revocation_result": "ACCEPT",
+  "timings_ms": {
+    "revoke_signature_verify": 28.4551,
+    "smt_reconstruction": 302.8177,
+    "smt_remove": 4.2807,
+    "new_root_frost_sign": 30.5201,
+    "new_root_signature_verify": 22.8912,
+    "state_commit": 4.3403,
+    "total": 525.8949
+  }
+}

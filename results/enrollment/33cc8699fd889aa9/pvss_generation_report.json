@@ -1,0 +1,29 @@
+{
+  "component": "Enrollment PVSS generation",
+  "enrollment_id": "33cc8699fd889aa9",
+  "D_id": 12345,
+  "scheme_id": 42,
+  "n": 5,
+  "t": 3,
+  "polynomial_degree": 2,
+  "commitments": 3,
+  "encrypted_shares": 5,
+  "decryption_self_tests": 5,
+  "reconstruction_subsets_tested": 10,
+  "reconstruction_subsets_valid": 10,
+  "all_decryptions_valid": true,
+  "all_threshold_reconstructions_valid": true,
+  "public_proof_status": "pending",
+  "timing_ms": {
+    "crypto_initialization": 957.3567999999996,
+    "user_material": 24.30790000000161,
+    "pvss_generation": 198.1831999999995,
+    "admin_decryption_self_test": 120.84200000000055,
+    "threshold_reconstruction_test": 0.5382000000008702
+  },
+  "note": [
+    "AAT nullifier is not consumed at this stage.",
+    "Plain shares and x_anchor are stored only in the laboratory private witness artifact.",
+    "PVSS public correctness proofs are generated in the next substep before Enroll_Package is sent to BAS."
+  ]
+}

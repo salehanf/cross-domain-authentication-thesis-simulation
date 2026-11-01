@@ -1,0 +1,159 @@
+{
+  "version": 1,
+  "phase": "proactive-share-refresh",
+  "enrollment_id": "06a83bd85b983218",
+  "D_id": "12345",
+  "scheme_id": "42",
+  "threshold": {
+    "n": 5,
+    "t": 3
+  },
+  "epoch": {
+    "from": 0,
+    "to": 1
+  },
+  "active_record": true,
+  "refresh_polynomials": 5,
+  "polynomial_degree": 2,
+  "zero_constant_term": true,
+  "public_commitment_count": 10,
+  "public_commitments": [
+    {
+      "sender_id": 1,
+      "coefficients_committed": [
+        {
+          "degree": 1,
+          "commitment": {
+            "x": "14616358318470663960597511207774183659017772821992495265637998576106429327029",
+            "y": "12429819298932897648312168976308303616887262600679339965363413272144647379335"
+          }
+        },
+        {
+          "degree": 2,
+          "commitment": {
+            "x": "2499046576221907097583033313997787712328589930403283211403186996779673247686",
+            "y": "8892976326080704635703631965145919650343898274728792061990760765754138825659"
+          }
+        }
+      ]
+    },
+    {
+      "sender_id": 2,
+      "coefficients_committed": [
+        {
+          "degree": 1,
+          "commitment": {
+            "x": "18040267547475945103124420438806680061666525434922348944908076513742907769502",
+            "y": "19295247498578497148438892112083652882267016912001607536936582154454516890196"
+          }
+        },
+        {
+          "degree": 2,
+          "commitment": {
+            "x": "20889573746417000257823029234847488721595160247953042095800182977204321307633",
+            "y": "19191747881843509913983374246403080947648013277569086309427039854556104542249"
+          }
+        }
+      ]
+    },
+    {
+      "sender_id": 3,
+      "coefficients_committed": [
+        {
+          "degree": 1,
+          "commitment": {
+            "x": "7582416423084770606630121869122115695669445500366671485161405748730574952061",
+            "y": "18822234190142385353958840677960919639373500422666275929305528055707292344525"
+          }
+        },
+        {
+          "degree": 2,
+          "commitment": {
+            "x": "36506136818538709608311257589630973449239184800589295611849864629719592887",
+            "y": "18818892945710885981294934250638659334637896896072393594514449137960458740563"
+          }
+        }
+      ]
+    },
+    {
+      "sender_id": 4,
+      "coefficients_committed": [
+        {
+          "degree": 1,
+          "commitment": {
+            "x": "2494261462848432797845861022564723575740283826062030591052977017928457102760",
+            "y": "18026902933611401238058155297349257093826249761043317920522533019041384401878"
+          }
+        },
+        {
+          "degree": 2,
+          "commitment": {
+            "x": "14675884443251384815018210646689141615337553190712794229811956003641053622033",
+            "y": "6319215852721683182703000127534505509294372718980621258489626881756734774177"
+          }
+        }
+      ]
+    },
+    {
+      "sender_id": 5,
+      "coefficients_committed": [
+        {
+          "degree": 1,
+          "commitment": {
+            "x": "11144722723241212616438114376066819792326115165914424686942612324350439705960",
+            "y": "8082785279167530355829723667204316244287750782706042834567624841669091055258"
+          }
+        },
+        {
+          "degree": 2,
+          "commitment": {
+            "x": "1245650472429642121168101137679416190096436426492342389413605616170899954004",
+            "y": "11932119611843406134677309290672772377877332562664253991217615003535884559260"
+          }
+        }
+      ]
+    }
+  ],
+  "delta_evaluations": 25,
+  "peer_delta_messages": 20,
+  "local_self_deltas": 5,
+  "delta_commitment_verifications": 25,
+  "old_threshold_subsets_valid": 10,
+  "new_threshold_subsets_valid": 10,
+  "shares_changed": 5,
+  "x_anchor_unchanged": true,
+  "x_anchor_exposed": false,
+  "y_hash_unchanged": true,
+  "mixed_epoch_policy": "REJECT",
+  "mixed_epoch_self_test": true,
+  "public_state_invariants": {
+    "signed_root_version": 3,
+    "signed_root_root": "13253605644099079715091587263820317239526813874199533362029838746325241840180",
+    "signed_root_unchanged": true,
+    "bas_registry_unchanged": true,
+    "enrollment_package_unchanged": true,
+    "L_unchanged": true,
+    "idx_unchanged": true,
+    "y_hash_unchanged": true
+  },
+  "sensitive_data_written_to_report": {
+    "x_anchor": false,
+    "old_shares": false,
+    "new_shares": false,
+    "deltas": false,
+    "polynomial_coefficients": false
+  },
+  "cleanup": {
+    "old_share_files_retained": false,
+    "old_share_values_logically_replaced": true,
+    "forensic_secure_erase_claimed": false
+  },
+  "timings_ms": {
+    "polynomial_and_commitments": 146.4716,
+    "delta_generation_and_verification": 346.852,
+    "share_update": 0.0927,
+    "threshold_and_invariant_verification": 17.4401,
+    "private_share_commit": 1.7333,
+    "total_refresh": 519.0956
+  }
+}

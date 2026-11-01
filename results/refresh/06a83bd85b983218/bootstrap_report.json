@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "phase": "proactive-refresh-bootstrap",
+  "enrollment_id": "06a83bd85b983218",
+  "D_id": "12345",
+  "scheme_id": "42",
+  "registry_status": "active",
+  "initial_share_epoch": 0,
+  "threshold": {
+    "n": 5,
+    "t": 3
+  },
+  "recovered_share_count": 5,
+  "ciphertext_integrity": [
+    {
+      "admin_id": 1,
+      "ciphertext_tag": "VALID"
+    },
+    {
+      "admin_id": 2,
+      "ciphertext_tag": "VALID"
+    },
+    {
+      "admin_id": 3,
+      "ciphertext_tag": "VALID"
+    },
+    {
+      "admin_id": 4,
+      "ciphertext_tag": "VALID"
+    },
+    {
+      "admin_id": 5,
+      "ciphertext_tag": "VALID"
+    }
+  ],
+  "threshold_subsets_tested": 10,
+  "threshold_subsets_valid": 10,
+  "reconstructed_secret": "x_anchor",
+  "reconstructed_x_anchor_exposed": false,
+  "share_values_exposed": false,
+  "derived_y_hash_matches_enrollment": true,
+  "source": "PVSS ciphertext decryption using administrator private keys",
+  "timings_ms": {
+    "decrypt_all_shares": 148.5612,
+    "total_bootstrap": 172.3962
+  },
+  "note": [
+    "Plain administrator shares are stored only in private/admin_shares.",
+    "The user-side PVSS witness is not used as the source of administrator shares.",
+    "No BAS registry entry, SMT leaf, SignedRoot, L, idx, or y_hash is modified."
+  ]
+}

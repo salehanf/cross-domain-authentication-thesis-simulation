@@ -1,0 +1,58 @@
+{
+  "version": 2,
+  "enrollment_id": "06a83bd85b983218",
+  "D_id": "12345",
+  "scheme_id": "42",
+  "threshold": {
+    "n": 5,
+    "t": 3
+  },
+  "participating_admins": [
+    1,
+    2,
+    3
+  ],
+  "share_source": "current",
+  "share_epoch": 1,
+  "epoch_consistency": "VALID",
+  "mixed_epoch_shares_used": false,
+  "pvss_encryption": "ECDH-Poseidon-field-mask",
+  "admin_results": [
+    {
+      "admin_id": 1,
+      "share_source": "current",
+      "share_epoch": 1,
+      "current_share_state_valid": true
+    },
+    {
+      "admin_id": 2,
+      "share_source": "current",
+      "share_epoch": 1,
+      "current_share_state_valid": true
+    },
+    {
+      "admin_id": 3,
+      "share_source": "current",
+      "share_epoch": 1,
+      "current_share_state_valid": true
+    }
+  ],
+  "recovered_share_count": 3,
+  "threshold_reconstruction": "VALID",
+  "reconstructed_secret": "x_anchor",
+  "reconstructed_x_anchor_exposed": false,
+  "x_reconstructed": false,
+  "anchor_matches_enrollment_witness": true,
+  "y_hash": "10198669630022552417299370469755758266029687975198936576402876398757281301414",
+  "y_hash_matches_enrollment_witness": true,
+  "bas_record_found": true,
+  "bas_record_status": "active",
+  "revocation_target": "VALID_ACTIVE_RECORD",
+  "timings_ms": {
+    "share_acquisition": 2.7202,
+    "pvss_decrypt_t_shares": null,
+    "current_share_load": 2.7202,
+    "lagrange_reconstruction": 0.5848,
+    "derive_Y_and_y_hash": 17.2872
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "enrollment_id": "7e34bac47f30dd21",
+  "accepted": true,
+  "D_id": 12345,
+  "scheme_id": 42,
+  "aat": {
+    "signature_valid": true,
+    "temporal_valid": true,
+    "purpose_valid": true,
+    "nullifier": "5430d8cdd9783ee8d800a1a55e0c79055a64ebce612564324a4f648ff1290fb1",
+    "previously_consumed": false,
+    "consumed": true
+  },
+  "pvss": {
+    "proofs_verified": 5,
+    "proof_count": 5,
+    "valid": true
+  },
+  "link_proof": {
+    "statement_bound": true,
+    "valid": true
+  },
+  "smt": {
+    "depth": 20,
+    "index": "907124",
+    "old_root": "4930738513896973287175333865974429784089330375743551446740194547782508420285",
+    "new_root": "9046879989600608694666409669853376020923349142629711329275735982465483555999"
+  },
+  "signed_root": {
+    "previous_version": 0,
+    "new_version": 1,
+    "previous_file": "D:\\thesis-simulation\\state\\roots\\signed_root_v0.json",
+    "new_file": "D:\\thesis-simulation\\state\\roots\\signed_root_v1.json",
+    "valid": true
+  }
+}
