@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "nullifiers": [
+    {
+      "nullifier": "5430d8cdd9783ee8d800a1a55e0c79055a64ebce612564324a4f648ff1290fb1",
+      "consumed_at": "2026-10-25T20:06:00.827Z",
+      "root_version": 1
+    },
+    {
+      "nullifier": "9771d848250240d47bf843c80569af2652e328b87463fe925ff6bf415925ee0b",
+      "consumed_at": "2026-10-26T08:54:34.939Z",
+      "root_version": 3
+    },
+    {
+      "nullifier": "5b87bb67abee75dd21a0bd0ac60ec8ec46762407ad07656ff5b474704a7cfb02",
+      "consumed_at": "2026-10-26T21:38:37.372Z",
+      "root_version": 5
+    }
+  ]
+}

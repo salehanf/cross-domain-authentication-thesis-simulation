@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "service_id": "benchmark-service",
+  "signature_scheme": "Ed25519",
+  "key_id": "f06888e26a2fa4215a972978b7037e2b840a9e62c504002ce4965b2d693dd37e",
+  "public_key_file": "D:\\thesis-simulation\\state\\services\\benchmark-service\\service_public_key.pem",
+  "created_at": "2026-10-25T21:08:51.437Z"
+}

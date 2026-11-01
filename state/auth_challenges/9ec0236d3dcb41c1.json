@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "challenge_id": "9ec0236d3dcb41c1",
+  "status": "pending",
+  "service": "post-revocation-test",
+  "D_id": "12345",
+  "scheme_id": "42",
+  "root": "4930738513896973287175333865974429784089330375743551446740194547782508420285",
+  "root_version": 4,
+  "challenge": "200626689932381323261775282975773390336127350494796476322643444807292777379",
+  "sid": "356783362854983550200287085777198134235018257722475128081292474584065560112",
+  "ctx": "6281631453650884886976760575716106696870219479443767205432464239705650048329",
+  "context_label": "cross-domain-auth|source-domain=12345|scheme=42|service=post-revocation-test",
+  "issued_at": "2026-10-26T10:45:19.548Z",
+  "expires_at": "2026-10-26T11:00:19.548Z",
+  "signed_root_file": "D:\\thesis-simulation\\state\\roots\\signed_root_v4.json"
+}

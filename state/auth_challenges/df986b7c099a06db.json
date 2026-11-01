@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "challenge_id": "df986b7c099a06db",
+  "status": "consumed",
+  "service": "benchmark-service",
+  "D_id": "12345",
+  "scheme_id": "42",
+  "root": "9046879989600608694666409669853376020923349142629711329275735982465483555999",
+  "root_version": 1,
+  "challenge": "92926223622626906025316207977528354298381569253815083355188694073789209834",
+  "sid": "417059487450710831780155558874623491708967762767823062118706219235250821997",
+  "ctx": "14793108886610882580475560134417963506350331801020347955836220927434119785285",
+  "context_label": "cross-domain-auth|source-domain=12345|scheme=42|service=benchmark-service",
+  "issued_at": "2026-10-25T20:59:15.606Z",
+  "expires_at": "2026-10-25T21:14:15.606Z",
+  "signed_root_file": "D:\\thesis-simulation\\state\\roots\\signed_root_v1.json",
+  "consumed_at": "2026-10-25T21:04:15.135Z",
+  "auth_result": "ACCEPT"
+}
