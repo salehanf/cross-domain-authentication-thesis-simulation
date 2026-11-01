@@ -1,0 +1,20 @@
+{
+  "scheme": "FROST",
+  "ciphersuite": "FROST(Ed25519, SHA-512)",
+  "threshold": 3,
+  "signers": [
+    1,
+    2,
+    3
+  ],
+  "message_bytes": 32,
+  "signature_bytes": 64,
+  "verified": true,
+  "timing": {
+    "round1_ms": 0.9409000000000001,
+    "round2_ms": 0.6185,
+    "aggregate_ms": 0.30469999999999997,
+    "verify_ms": 0.14980000000000002,
+    "total_ms": 2.2736
+  }
+}
